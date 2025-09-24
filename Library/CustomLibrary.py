@@ -13,7 +13,7 @@ class CustomLibrary():
         return users
     
     def get_random_birthday(self):
-        return str(random.randint(1,12))+str(random.randint(1,28))+str(random.randint(1999,2006))
+        return str(random.randint(1,12)).zfill(2) +str(random.randint(1,28)).zfill(2)+str(random.randint(1999,2006))
     
     def generate_password(self,length=8):
         chars = string.ascii_letters+string.digits+"!@#$%"
