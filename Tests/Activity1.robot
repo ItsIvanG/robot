@@ -1,5 +1,6 @@
 *** Settings ***
 Resource    ../Resources/CustomerPage.resource
+Library    String
 
 Test Setup    Prepare Test
 
@@ -11,14 +12,9 @@ ${PASSWORD}    demo
 *** Test Cases ***
 
 TEST_CASE_1
-    
     ${users}    Get Random Users
-    FOR    ${i}    IN RANGE    5
-        Go To Customers Page
-        Create User    ${users[${i}]}
-        Verify User Form    ${users[${i}]}
-    END
-
+    Add And Verify First Five Users    ${users}
+    Verify First Five Users In Table    ${users}
 
 
 *** Keywords ***
@@ -76,3 +72,55 @@ Verify User Form
 
     ${confirm}=    Get Element Attribute    ${customers_txt_confirm_password}    value
     Should Be Equal As Strings    ${confirm}    ${user["password"]}
+
+
+Add And Verify First Five Users
+    [Arguments]    ${users}
+    FOR    ${i}    IN RANGE    5
+        Go To Customers Page
+        Create User    ${users[${i}]}
+        Verify User Form    ${users[${i}]}
+    END
+
+
+*** Variables ***
+${table_row}    //*[@id="main-content"]/div/div[1]/div[2]/div/div[2]/table//tbody//tr
+
+*** Keywords ***
+
+Verify First Five Users In Table
+    [Arguments]    ${users}
+    Go To Customers Page
+    Refresh Current Page
+    ${row_count}=    Get Element Count    ${table_row}
+    ${limit}=    Set Variable If    ${row_count} < 5    ${row_count}    5
+
+    # Check that there are at least 5 rows to verify
+    Should Be True    ${row_count} >= 5    Table does not have enough rows to verify 5 users.
+
+    # Iterate through the first 5 users from your data list
+    FOR    ${i}    IN RANGE    0    5
+        # Get the current user from the list
+        ${current_user}=    Set Variable    ${users}[${i}]
+
+        # Search for this specific user in the table
+        ${user_found}=    Set Variable    ${False}
+        FOR    ${j}    IN RANGE    1    ${row_count}+1
+            ${row_locator}=    Set Variable    ((${table_row})[${j}]//td)[2]
+            ${fetched_name}=    Get Text    ${row_locator}
+            IF    "\\n" in """${fetched_name}"""
+                ${fetched_name}=    Evaluate    """${fetched_name}""".replace("\\n","")[1:]
+            END
+
+            ${name_parts}=    Split String    ${current_user["name"]}    ${SPACE}
+            ${first_name}=    Set Variable    ${name_parts}[0]
+            ${last_name}=    Set Variable    ${name_parts}[-1]
+            ${expected_name}=    Set Variable    ${first_name} ${last_name}
+
+            IF    '${fetched_name}' == '${expected_name}'
+                ${user_found}=    Set Variable    ${True}
+                Exit For Loop
+            END
+        END
+        Should Be True    ${user_found}    User '${current_user["name"]}' was not found in the table.
+    END 
