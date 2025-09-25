@@ -2,7 +2,7 @@
 Resource    ../Resources/CustomerPage.resource
 Library    String
 Library    Collections 
-Test Setup    Prepare Test
+Suite Setup    Prepare Test
 
 *** Variables ***
 ${URL}    https://marmelab.com/react-admin-demo/
@@ -291,15 +291,15 @@ Analyze User Spending From Table
         ${name_locator}=    Set Variable    ${current_row_locator}/td[2]//a/div
         ${raw_name}=    Get Text    ${name_locator}
         ${name}=    Evaluate    " ".join("""${raw_name}""".split()[1:])
-        Log To Console    \n====== User ${i} ======
-        Log To Console    Name: ${name}
+        # Log To Console    \n====== User ${i} ======
+        Log To Console    \n${name}:
 
         # --- Total Spent ---
         ${spent_locator}=    Set Variable    ${current_row_locator}/td[5]
         ${spent_text}=    Get Text    ${spent_locator}
         ${spent_text}=    Evaluate    """${spent_text}""".replace("$","").replace(",","").strip()
         ${spent}=    Evaluate    int(${spent_text}) if ${spent_text} else 0
-        Log To Console    Total spent: $${spent}
+        Log To Console     $${spent}
 
         # --- Keep users with spending > 0 ---
         IF    ${spent} > 0

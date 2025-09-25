@@ -1,54 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.12.5 on darwin)" generated="2025-09-25T12:36:57.355578" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.12.5 on darwin)" generated="2025-09-25T13:48:05.940758" rpa="false" schemaversion="5">
 <suite id="s1" name="Activity1" source="/Users/ivangonzales/VSCode Projects/robot/Tests/Activity1.robot">
-<test id="s1-t1" name="TEST_CASE_4" line="28">
 <kw name="Prepare Test" type="SETUP">
 <kw name="Launch browser" owner="CustomerPage">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:36:57.483233" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x1029d3560&gt;</msg>
+<msg time="2025-09-25T13:48:06.073325" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x102f7b260&gt;</msg>
 <var>${options}</var>
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys, selenium.webdriver</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:36:57.483037" elapsed="0.001375"/>
+<status status="PASS" start="2025-09-25T13:48:06.073143" elapsed="0.001534"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-popup-blocking</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2025-09-25T12:36:57.484679" elapsed="0.000208"/>
+<status status="PASS" start="2025-09-25T13:48:06.074967" elapsed="0.000141"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-notifications</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2025-09-25T12:36:57.485078" elapsed="0.000099"/>
+<status status="PASS" start="2025-09-25T13:48:06.075209" elapsed="0.000140"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-save-password-bubble</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2025-09-25T12:36:57.485253" elapsed="0.000112"/>
+<status status="PASS" start="2025-09-25T13:48:06.075450" elapsed="0.000117"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--start-maximized</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2025-09-25T12:36:57.485434" elapsed="0.000084"/>
+<status status="PASS" start="2025-09-25T13:48:06.075646" elapsed="0.000098"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--disable-password-manager-reauthentication</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2025-09-25T12:36:57.485588" elapsed="0.000079"/>
+<status status="PASS" start="2025-09-25T13:48:06.075817" elapsed="0.000087"/>
 </kw>
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2025-09-25T12:36:57.485933" level="INFO">${prefs} = {'credentials_enable_service': 'False', 'profile.password_manager_enabled': 'False', 'profile.default_content_setting_values.notifications': '2', 'safebrowsing.enabled': 'False', 'safebrowsing.disable...</msg>
+<msg time="2025-09-25T13:48:06.076179" level="INFO">${prefs} = {'credentials_enable_service': 'False', 'profile.password_manager_enabled': 'False', 'profile.default_content_setting_values.notifications': '2', 'safebrowsing.enabled': 'False', 'safebrowsing.disable...</msg>
 <var>${prefs}</var>
 <arg>credentials_enable_service=False</arg>
 <arg>profile.password_manager_enabled=False</arg>
@@ -56,7 +55,7 @@
 <arg>safebrowsing.enabled=False</arg>
 <arg>safebrowsing.disable_download_protection=True</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2025-09-25T12:36:57.485749" elapsed="0.000250"/>
+<status status="PASS" start="2025-09-25T13:48:06.075983" elapsed="0.000259"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
@@ -64,465 +63,448 @@
 <arg>prefs</arg>
 <arg>${prefs}</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2025-09-25T12:36:57.486066" elapsed="0.000145"/>
+<status status="PASS" start="2025-09-25T13:48:06.076313" elapsed="0.000093"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:36:57.486445" level="INFO">Opening browser 'chrome' to base url 'https://marmelab.com/react-admin-demo/'.</msg>
+<msg time="2025-09-25T13:48:06.076711" level="INFO">Opening browser 'chrome' to base url 'https://marmelab.com/react-admin-demo/'.</msg>
 <arg>${url}</arg>
 <arg>chrome</arg>
 <arg>options=${options}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-25T12:36:57.486289" elapsed="1.994809"/>
+<status status="PASS" start="2025-09-25T13:48:06.076490" elapsed="2.270643"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${login_txt_username}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-09-25T12:36:59.482196" elapsed="0.238170"/>
+<status status="PASS" start="2025-09-25T13:48:08.347938" elapsed="0.231394"/>
 </kw>
 <arg>5x</arg>
 <arg>0.5s</arg>
 <arg>Wait Until Element Is Visible</arg>
 <arg>${login_txt_username}</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2025-09-25T12:36:59.481844" elapsed="0.238658"/>
+<status status="PASS" start="2025-09-25T13:48:08.347644" elapsed="0.231795"/>
 </kw>
-<status status="PASS" start="2025-09-25T12:36:57.482604" elapsed="2.238002"/>
+<status status="PASS" start="2025-09-25T13:48:06.072753" elapsed="2.506765"/>
 </kw>
 <kw name="Login User" owner="CustomerPage">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:36:59.721357" level="INFO">Typing text 'demo' into text field '//input[@name="username"]'.</msg>
+<msg time="2025-09-25T13:48:08.580100" level="INFO">Typing text 'demo' into text field '//input[@name="username"]'.</msg>
 <arg>${login_txt_username}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:36:59.721168" elapsed="0.124827"/>
+<status status="PASS" start="2025-09-25T13:48:08.579930" elapsed="0.105622"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:36:59.846527" level="INFO">Typing text 'demo' into text field '//input[@name="password"]'.</msg>
+<msg time="2025-09-25T13:48:08.685912" level="INFO">Typing text 'demo' into text field '//input[@name="password"]'.</msg>
 <arg>${login_txt_password}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:36:59.846253" elapsed="0.048735"/>
+<status status="PASS" start="2025-09-25T13:48:08.685728" elapsed="0.044094"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:36:59.895393" level="INFO">Clicking button '//*[@id="root"]/div/div/form/div/button'.</msg>
+<msg time="2025-09-25T13:48:08.730174" level="INFO">Clicking button '//*[@id="root"]/div/div/form/div/button'.</msg>
 <arg>//*[@id="root"]/div/div/form/div/button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:36:59.895183" elapsed="0.058991"/>
+<status status="PASS" start="2025-09-25T13:48:08.730002" elapsed="0.079297"/>
 </kw>
-<status status="PASS" start="2025-09-25T12:36:59.720821" elapsed="0.233512"/>
+<status status="PASS" start="2025-09-25T13:48:08.579680" elapsed="0.229749"/>
 </kw>
-<status status="PASS" start="2025-09-25T12:36:57.482368" elapsed="2.472025"/>
+<status status="PASS" start="2025-09-25T13:48:06.072533" elapsed="2.736962"/>
 </kw>
+<test id="s1-t1" name="TEST_CASE_4" line="28">
 <kw name="Analyze User Spending From Table">
 <kw name="Go To Customers Page" owner="CustomerPage">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:36:59.956992" level="INFO">Clicking element '(//p[text()="Customers"])[2]'.</msg>
+<msg time="2025-09-25T13:48:08.810854" level="INFO">Clicking element '(//p[text()="Customers"])[2]'.</msg>
 <arg>${nav_btn_customers}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:36:59.956411" elapsed="0.125235"/>
+<status status="PASS" start="2025-09-25T13:48:08.810683" elapsed="0.113714"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>//table//tbody//tr</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.084904" elapsed="0.464740"/>
+<status status="PASS" start="2025-09-25T13:48:08.924580" elapsed="0.450473"/>
 </kw>
-<status status="PASS" start="2025-09-25T12:36:59.955942" elapsed="0.593829"/>
+<status status="PASS" start="2025-09-25T13:48:08.810533" elapsed="0.564635"/>
 </kw>
 <kw name="Create List" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.550133" level="INFO">${users_with_spent} = []</msg>
+<msg time="2025-09-25T13:48:09.375395" level="INFO">${users_with_spent} = []</msg>
 <var>${users_with_spent}</var>
 <doc>Returns a list containing given items.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.549888" elapsed="0.000717"/>
+<status status="PASS" start="2025-09-25T13:48:09.375263" elapsed="0.000386"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.551047" level="INFO">${total_spent} = 0</msg>
+<msg time="2025-09-25T13:48:09.375878" level="INFO">${total_spent} = 0</msg>
 <var>${total_spent}</var>
 <arg>0</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.550878" elapsed="0.000232"/>
+<status status="PASS" start="2025-09-25T13:48:09.375759" elapsed="0.000171"/>
 </kw>
 <kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:00.559309" level="INFO">${row_count} = 25</msg>
+<msg time="2025-09-25T13:48:09.384342" level="INFO">${row_count} = 25</msg>
 <var>${row_count}</var>
 <arg>${table_row}</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.551222" elapsed="0.008208"/>
+<status status="PASS" start="2025-09-25T13:48:09.376018" elapsed="0.008455"/>
 </kw>
 <for flavor="IN RANGE">
 <iter>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.560068" level="INFO">${current_row_locator} = (//table//tbody//tr)[1]</msg>
+<msg time="2025-09-25T13:48:09.385157" level="INFO">${current_row_locator} = (//table//tbody//tr)[1]</msg>
 <var>${current_row_locator}</var>
 <arg>(${table_row})[${i}]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.559924" elapsed="0.000199"/>
+<status status="PASS" start="2025-09-25T13:48:09.385008" elapsed="0.000209"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.560304" level="INFO">${name_locator} = (//table//tbody//tr)[1]/td[2]//a/div</msg>
+<msg time="2025-09-25T13:48:09.385402" level="INFO">${name_locator} = (//table//tbody//tr)[1]/td[2]//a/div</msg>
 <var>${name_locator}</var>
 <arg>${current_row_locator}/td[2]//a/div</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.560204" elapsed="0.000142"/>
+<status status="PASS" start="2025-09-25T13:48:09.385299" elapsed="0.000147"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:00.574516" level="INFO">${raw_name} = Cade Ullrich</msg>
+<msg time="2025-09-25T13:48:09.429895" level="INFO">${raw_name} = Halie O'Reilly</msg>
 <var>${raw_name}</var>
 <arg>${name_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.560494" elapsed="0.014158"/>
+<status status="PASS" start="2025-09-25T13:48:09.385616" elapsed="0.044394"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.575024" level="INFO">${name} = Ullrich</msg>
+<msg time="2025-09-25T13:48:09.430564" level="INFO">${name} = O'Reilly</msg>
 <var>${name}</var>
 <arg>" ".join("""${raw_name}""".split()[1:])</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.574805" elapsed="0.000268"/>
+<status status="PASS" start="2025-09-25T13:48:09.430287" elapsed="0.000352"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>\n====== User ${i} ======</arg>
+<arg>\n${name}:</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.575159" elapsed="0.000196"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Name: ${name}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.575464" elapsed="0.000232"/>
+<status status="PASS" start="2025-09-25T13:48:09.430756" elapsed="0.000208"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.576074" level="INFO">${spent_locator} = (//table//tbody//tr)[1]/td[5]</msg>
+<msg time="2025-09-25T13:48:09.431265" level="INFO">${spent_locator} = (//table//tbody//tr)[1]/td[5]</msg>
 <var>${spent_locator}</var>
 <arg>${current_row_locator}/td[5]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.575866" elapsed="0.000265"/>
+<status status="PASS" start="2025-09-25T13:48:09.431115" elapsed="0.000208"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:00.586156" level="INFO">${spent_text} = $0.00</msg>
+<msg time="2025-09-25T13:48:09.443207" level="INFO">${spent_text} = $1,086.47</msg>
 <var>${spent_text}</var>
 <arg>${spent_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.576219" elapsed="0.010038"/>
+<status status="PASS" start="2025-09-25T13:48:09.431416" elapsed="0.011901"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.586606" level="INFO">${spent_text} = 0.00</msg>
+<msg time="2025-09-25T13:48:09.443687" level="INFO">${spent_text} = 1086.47</msg>
 <var>${spent_text}</var>
 <arg>"""${spent_text}""".replace("$","").replace(",","").strip()</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.586389" elapsed="0.000263"/>
+<status status="PASS" start="2025-09-25T13:48:09.443454" elapsed="0.000283"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.586855" level="INFO">${spent} = 0</msg>
+<msg time="2025-09-25T13:48:09.443964" level="INFO">${spent} = 1086</msg>
 <var>${spent}</var>
 <arg>int(${spent_text}) if ${spent_text} else 0</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.586725" elapsed="0.000173"/>
+<status status="PASS" start="2025-09-25T13:48:09.443816" elapsed="0.000320"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Total spent: $${spent}</arg>
+<arg>$${spent}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.586965" elapsed="0.000107"/>
+<status status="PASS" start="2025-09-25T13:48:09.444209" elapsed="0.000114"/>
 </kw>
 <if>
 <branch type="IF" condition="${spent} &gt; 0">
 <kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-09-25T13:48:09.444711" level="INFO">${user} = {'name': "O'Reilly", 'spent': 1086}</msg>
 <var>${user}</var>
 <arg>name=${name}</arg>
 <arg>spent=${spent}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:00.587269" elapsed="0.000043"/>
+<status status="PASS" start="2025-09-25T13:48:09.444533" elapsed="0.000227"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${users_with_spent}</arg>
 <arg>${user}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:00.587385" elapsed="0.000040"/>
+<status status="PASS" start="2025-09-25T13:48:09.444826" elapsed="0.000099"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-09-25T13:48:09.445095" level="INFO">${total_spent} = 1086</msg>
 <var>${total_spent}</var>
 <arg>${total_spent} + ${spent}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:00.587488" elapsed="0.000034"/>
+<status status="PASS" start="2025-09-25T13:48:09.444989" elapsed="0.000145"/>
 </kw>
-<status status="NOT RUN" start="2025-09-25T12:37:00.587149" elapsed="0.000410"/>
+<status status="PASS" start="2025-09-25T13:48:09.444401" elapsed="0.000770"/>
 </branch>
-<status status="PASS" start="2025-09-25T12:37:00.587129" elapsed="0.000479"/>
+<status status="PASS" start="2025-09-25T13:48:09.444382" elapsed="0.000834"/>
 </if>
 <var name="${i}">1</var>
-<status status="PASS" start="2025-09-25T12:37:00.559808" elapsed="0.027816"/>
+<status status="PASS" start="2025-09-25T13:48:09.384880" elapsed="0.060349"/>
 </iter>
 <iter>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.587912" level="INFO">${current_row_locator} = (//table//tbody//tr)[2]</msg>
+<msg time="2025-09-25T13:48:09.445501" level="INFO">${current_row_locator} = (//table//tbody//tr)[2]</msg>
 <var>${current_row_locator}</var>
 <arg>(${table_row})[${i}]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.587809" elapsed="0.000145"/>
+<status status="PASS" start="2025-09-25T13:48:09.445407" elapsed="0.000136"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.588103" level="INFO">${name_locator} = (//table//tbody//tr)[2]/td[2]//a/div</msg>
+<msg time="2025-09-25T13:48:09.445685" level="INFO">${name_locator} = (//table//tbody//tr)[2]/td[2]//a/div</msg>
 <var>${name_locator}</var>
 <arg>${current_row_locator}/td[2]//a/div</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.588020" elapsed="0.000119"/>
+<status status="PASS" start="2025-09-25T13:48:09.445605" elapsed="0.000115"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:00.600018" level="INFO">${raw_name} = Ludwig Brekke</msg>
+<msg time="2025-09-25T13:48:09.458191" level="INFO">${raw_name} = Maryjane Heller</msg>
 <var>${raw_name}</var>
 <arg>${name_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.588204" elapsed="0.011912"/>
+<status status="PASS" start="2025-09-25T13:48:09.445783" elapsed="0.012512"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.600407" level="INFO">${name} = Brekke</msg>
+<msg time="2025-09-25T13:48:09.458973" level="INFO">${name} = Heller</msg>
 <var>${name}</var>
 <arg>" ".join("""${raw_name}""".split()[1:])</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.600236" elapsed="0.000214"/>
+<status status="PASS" start="2025-09-25T13:48:09.458427" elapsed="0.000651"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>\n====== User ${i} ======</arg>
+<arg>\n${name}:</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.600521" elapsed="0.000120"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Name: ${name}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.600710" elapsed="0.000090"/>
+<status status="PASS" start="2025-09-25T13:48:09.459201" elapsed="0.000223"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.600955" level="INFO">${spent_locator} = (//table//tbody//tr)[2]/td[5]</msg>
+<msg time="2025-09-25T13:48:09.459654" level="INFO">${spent_locator} = (//table//tbody//tr)[2]/td[5]</msg>
 <var>${spent_locator}</var>
 <arg>${current_row_locator}/td[5]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.600869" elapsed="0.000127"/>
+<status status="PASS" start="2025-09-25T13:48:09.459531" elapsed="0.000178"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:00.648824" level="INFO">${spent_text} = $570.62</msg>
+<msg time="2025-09-25T13:48:09.470485" level="INFO">${spent_text} = $0.00</msg>
 <var>${spent_text}</var>
 <arg>${spent_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.601063" elapsed="0.047903"/>
+<status status="PASS" start="2025-09-25T13:48:09.459848" elapsed="0.010745"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.649373" level="INFO">${spent_text} = 570.62</msg>
+<msg time="2025-09-25T13:48:09.470950" level="INFO">${spent_text} = 0.00</msg>
 <var>${spent_text}</var>
 <arg>"""${spent_text}""".replace("$","").replace(",","").strip()</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.649118" elapsed="0.000311"/>
+<status status="PASS" start="2025-09-25T13:48:09.470725" elapsed="0.000275"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.649814" level="INFO">${spent} = 570</msg>
+<msg time="2025-09-25T13:48:09.471239" level="INFO">${spent} = 0</msg>
 <var>${spent}</var>
 <arg>int(${spent_text}) if ${spent_text} else 0</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.649515" elapsed="0.000471"/>
+<status status="PASS" start="2025-09-25T13:48:09.471076" elapsed="0.000207"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Total spent: $${spent}</arg>
+<arg>$${spent}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.650075" elapsed="0.000135"/>
+<status status="PASS" start="2025-09-25T13:48:09.471355" elapsed="0.000147"/>
 </kw>
 <if>
 <branch type="IF" condition="${spent} &gt; 0">
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.651397" level="INFO">${user} = {'name': 'Brekke', 'spent': 570}</msg>
 <var>${user}</var>
 <arg>name=${name}</arg>
 <arg>spent=${spent}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.651132" elapsed="0.000352"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.471778" elapsed="0.000047"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${users_with_spent}</arg>
 <arg>${user}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.651583" elapsed="0.000187"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.471903" elapsed="0.000037"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.651992" level="INFO">${total_spent} = 570</msg>
 <var>${total_spent}</var>
 <arg>${total_spent} + ${spent}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.651856" elapsed="0.000185"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.472070" elapsed="0.000072"/>
 </kw>
-<status status="PASS" start="2025-09-25T12:37:00.650934" elapsed="0.001235"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.471624" elapsed="0.000636"/>
 </branch>
-<status status="PASS" start="2025-09-25T12:37:00.650909" elapsed="0.001316"/>
+<status status="PASS" start="2025-09-25T13:48:09.471604" elapsed="0.000741"/>
 </if>
 <var name="${i}">2</var>
-<status status="PASS" start="2025-09-25T12:37:00.587742" elapsed="0.064500"/>
+<status status="PASS" start="2025-09-25T13:48:09.445342" elapsed="0.027019"/>
 </iter>
 <iter>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.652570" level="INFO">${current_row_locator} = (//table//tbody//tr)[3]</msg>
+<msg time="2025-09-25T13:48:09.472865" level="INFO">${current_row_locator} = (//table//tbody//tr)[3]</msg>
 <var>${current_row_locator}</var>
 <arg>(${table_row})[${i}]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.652461" elapsed="0.000159"/>
+<status status="PASS" start="2025-09-25T13:48:09.472691" elapsed="0.000242"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.652783" level="INFO">${name_locator} = (//table//tbody//tr)[3]/td[2]//a/div</msg>
+<msg time="2025-09-25T13:48:09.473113" level="INFO">${name_locator} = (//table//tbody//tr)[3]/td[2]//a/div</msg>
 <var>${name_locator}</var>
 <arg>${current_row_locator}/td[2]//a/div</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.652692" elapsed="0.000131"/>
+<status status="PASS" start="2025-09-25T13:48:09.473011" elapsed="0.000147"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:00.666870" level="INFO">${raw_name} = Bertram Spencer</msg>
+<msg time="2025-09-25T13:48:09.488028" level="INFO">${raw_name} = Destin Doyle</msg>
 <var>${raw_name}</var>
 <arg>${name_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.652898" elapsed="0.014075"/>
+<status status="PASS" start="2025-09-25T13:48:09.473236" elapsed="0.014906"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.667281" level="INFO">${name} = Spencer</msg>
+<msg time="2025-09-25T13:48:09.488454" level="INFO">${name} = Doyle</msg>
 <var>${name}</var>
 <arg>" ".join("""${raw_name}""".split()[1:])</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.667097" elapsed="0.000230"/>
+<status status="PASS" start="2025-09-25T13:48:09.488276" elapsed="0.000222"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>\n====== User ${i} ======</arg>
+<arg>\n${name}:</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.667400" elapsed="0.000121"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Name: ${name}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.667595" elapsed="0.000135"/>
+<status status="PASS" start="2025-09-25T13:48:09.488569" elapsed="0.000115"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.667951" level="INFO">${spent_locator} = (//table//tbody//tr)[3]/td[5]</msg>
+<msg time="2025-09-25T13:48:09.488921" level="INFO">${spent_locator} = (//table//tbody//tr)[3]/td[5]</msg>
 <var>${spent_locator}</var>
 <arg>${current_row_locator}/td[5]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.667830" elapsed="0.000173"/>
+<status status="PASS" start="2025-09-25T13:48:09.488758" elapsed="0.000232"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:00.678863" level="INFO">${spent_text} = $0.00</msg>
+<msg time="2025-09-25T13:48:09.533736" level="INFO">${spent_text} = $1,768.76</msg>
 <var>${spent_text}</var>
 <arg>${spent_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.668084" elapsed="0.010877"/>
+<status status="PASS" start="2025-09-25T13:48:09.489085" elapsed="0.044832"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.679292" level="INFO">${spent_text} = 0.00</msg>
+<msg time="2025-09-25T13:48:09.536672" level="INFO">${spent_text} = 1768.76</msg>
 <var>${spent_text}</var>
 <arg>"""${spent_text}""".replace("$","").replace(",","").strip()</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.679092" elapsed="0.000241"/>
+<status status="PASS" start="2025-09-25T13:48:09.535635" elapsed="0.001288"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.679546" level="INFO">${spent} = 0</msg>
+<msg time="2025-09-25T13:48:09.537754" level="INFO">${spent} = 1768</msg>
 <var>${spent}</var>
 <arg>int(${spent_text}) if ${spent_text} else 0</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.679419" elapsed="0.000165"/>
+<status status="PASS" start="2025-09-25T13:48:09.537230" elapsed="0.000671"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Total spent: $${spent}</arg>
+<arg>$${spent}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.679652" elapsed="0.000110"/>
+<status status="PASS" start="2025-09-25T13:48:09.538133" elapsed="0.000429"/>
 </kw>
 <if>
 <branch type="IF" condition="${spent} &gt; 0">
 <kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-09-25T13:48:09.539320" level="INFO">${user} = {'name': 'Doyle', 'spent': 1768}</msg>
 <var>${user}</var>
 <arg>name=${name}</arg>
 <arg>spent=${spent}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:00.679942" elapsed="0.000038"/>
+<status status="PASS" start="2025-09-25T13:48:09.538987" elapsed="0.000425"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${users_with_spent}</arg>
 <arg>${user}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:00.680044" elapsed="0.000034"/>
+<status status="PASS" start="2025-09-25T13:48:09.539509" elapsed="0.000116"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-09-25T13:48:09.539827" level="INFO">${total_spent} = 2854</msg>
 <var>${total_spent}</var>
 <arg>${total_spent} + ${spent}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:00.680136" elapsed="0.000032"/>
+<status status="PASS" start="2025-09-25T13:48:09.539700" elapsed="0.000172"/>
 </kw>
-<status status="NOT RUN" start="2025-09-25T12:37:00.679832" elapsed="0.000463"/>
+<status status="PASS" start="2025-09-25T13:48:09.538696" elapsed="0.001217"/>
 </branch>
-<status status="PASS" start="2025-09-25T12:37:00.679816" elapsed="0.000521"/>
+<status status="PASS" start="2025-09-25T13:48:09.538678" elapsed="0.001279"/>
 </if>
 <var name="${i}">3</var>
-<status status="PASS" start="2025-09-25T12:37:00.652381" elapsed="0.027970"/>
+<status status="PASS" start="2025-09-25T13:48:09.472587" elapsed="0.067384"/>
 </iter>
 <iter>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.680647" level="INFO">${current_row_locator} = (//table//tbody//tr)[4]</msg>
+<msg time="2025-09-25T13:48:09.540266" level="INFO">${current_row_locator} = (//table//tbody//tr)[4]</msg>
 <var>${current_row_locator}</var>
 <arg>(${table_row})[${i}]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.680540" elapsed="0.000154"/>
+<status status="PASS" start="2025-09-25T13:48:09.540166" elapsed="0.000230"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.680847" level="INFO">${name_locator} = (//table//tbody//tr)[4]/td[2]//a/div</msg>
+<msg time="2025-09-25T13:48:09.540543" level="INFO">${name_locator} = (//table//tbody//tr)[4]/td[2]//a/div</msg>
 <var>${name_locator}</var>
 <arg>${current_row_locator}/td[2]//a/div</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.680759" elapsed="0.000127"/>
+<status status="PASS" start="2025-09-25T13:48:09.540460" elapsed="0.000120"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:00.692609" level="INFO">${raw_name} = Elza Mayer</msg>
+<msg time="2025-09-25T13:48:09.551712" level="INFO">${raw_name} = Robb Price</msg>
 <var>${raw_name}</var>
 <arg>${name_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.680953" elapsed="0.011784"/>
+<status status="PASS" start="2025-09-25T13:48:09.540649" elapsed="0.011182"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.693173" level="INFO">${name} = Mayer</msg>
+<msg time="2025-09-25T13:48:09.552171" level="INFO">${name} = Price</msg>
 <var>${name}</var>
 <arg>" ".join("""${raw_name}""".split()[1:])</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.692915" elapsed="0.000308"/>
+<status status="PASS" start="2025-09-25T13:48:09.551971" elapsed="0.000248"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>\n====== User ${i} ======</arg>
+<arg>\n${name}:</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.693298" elapsed="0.000141"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Name: ${name}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.693511" elapsed="0.000277"/>
+<status status="PASS" start="2025-09-25T13:48:09.552288" elapsed="0.000120"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.694034" level="INFO">${spent_locator} = (//table//tbody//tr)[4]/td[5]</msg>
+<msg time="2025-09-25T13:48:09.552572" level="INFO">${spent_locator} = (//table//tbody//tr)[4]/td[5]</msg>
 <var>${spent_locator}</var>
 <arg>${current_row_locator}/td[5]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.693899" elapsed="0.000188"/>
+<status status="PASS" start="2025-09-25T13:48:09.552476" elapsed="0.000136"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:00.704640" level="INFO">${spent_text} = $0.00</msg>
+<msg time="2025-09-25T13:48:09.563005" level="INFO">${spent_text} = $0.00</msg>
 <var>${spent_text}</var>
 <arg>${spent_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.694174" elapsed="0.010560"/>
+<status status="PASS" start="2025-09-25T13:48:09.552678" elapsed="0.010436"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.705058" level="INFO">${spent_text} = 0.00</msg>
+<msg time="2025-09-25T13:48:09.563493" level="INFO">${spent_text} = 0.00</msg>
 <var>${spent_text}</var>
 <arg>"""${spent_text}""".replace("$","").replace(",","").strip()</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.704859" elapsed="0.000243"/>
+<status status="PASS" start="2025-09-25T13:48:09.563260" elapsed="0.000282"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.705398" level="INFO">${spent} = 0</msg>
+<msg time="2025-09-25T13:48:09.563758" level="INFO">${spent} = 0</msg>
 <var>${spent}</var>
 <arg>int(${spent_text}) if ${spent_text} else 0</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.705237" elapsed="0.000202"/>
+<status status="PASS" start="2025-09-25T13:48:09.563622" elapsed="0.000176"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Total spent: $${spent}</arg>
+<arg>$${spent}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.705621" elapsed="0.000116"/>
+<status status="PASS" start="2025-09-25T13:48:09.563873" elapsed="0.000119"/>
 </kw>
 <if>
 <branch type="IF" condition="${spent} &gt; 0">
@@ -531,298 +513,287 @@
 <arg>name=${name}</arg>
 <arg>spent=${spent}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:00.705926" elapsed="0.000040"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.564175" elapsed="0.000039"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${users_with_spent}</arg>
 <arg>${user}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:00.706033" elapsed="0.000036"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.564373" elapsed="0.000107"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
 <var>${total_spent}</var>
 <arg>${total_spent} + ${spent}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:00.706131" elapsed="0.000033"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.564583" elapsed="0.000044"/>
 </kw>
-<status status="NOT RUN" start="2025-09-25T12:37:00.705809" elapsed="0.000391"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.564062" elapsed="0.000619"/>
 </branch>
-<status status="PASS" start="2025-09-25T12:37:00.705793" elapsed="0.000447"/>
+<status status="PASS" start="2025-09-25T13:48:09.564046" elapsed="0.000684"/>
 </if>
 <var name="${i}">4</var>
-<status status="PASS" start="2025-09-25T12:37:00.680470" elapsed="0.025784"/>
+<status status="PASS" start="2025-09-25T13:48:09.540091" elapsed="0.024672"/>
 </iter>
 <iter>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.721862" level="INFO">${current_row_locator} = (//table//tbody//tr)[5]</msg>
+<msg time="2025-09-25T13:48:09.565128" level="INFO">${current_row_locator} = (//table//tbody//tr)[5]</msg>
 <var>${current_row_locator}</var>
 <arg>(${table_row})[${i}]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.706866" elapsed="0.016182"/>
+<status status="PASS" start="2025-09-25T13:48:09.564994" elapsed="0.000187"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.723872" level="INFO">${name_locator} = (//table//tbody//tr)[5]/td[2]//a/div</msg>
+<msg time="2025-09-25T13:48:09.565346" level="INFO">${name_locator} = (//table//tbody//tr)[5]/td[2]//a/div</msg>
 <var>${name_locator}</var>
 <arg>${current_row_locator}/td[2]//a/div</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.723227" elapsed="0.000830"/>
+<status status="PASS" start="2025-09-25T13:48:09.565253" elapsed="0.000135"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:00.751127" level="INFO">${raw_name} = Rudolph Hoeger</msg>
+<msg time="2025-09-25T13:48:09.576530" level="INFO">${raw_name} = Jan Wyman</msg>
 <var>${raw_name}</var>
 <arg>${name_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.724345" elapsed="0.026895"/>
+<status status="PASS" start="2025-09-25T13:48:09.565460" elapsed="0.011205"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.751537" level="INFO">${name} = Hoeger</msg>
+<msg time="2025-09-25T13:48:09.577023" level="INFO">${name} = Wyman</msg>
 <var>${name}</var>
 <arg>" ".join("""${raw_name}""".split()[1:])</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.751364" elapsed="0.000217"/>
+<status status="PASS" start="2025-09-25T13:48:09.576806" elapsed="0.000261"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>\n====== User ${i} ======</arg>
+<arg>\n${name}:</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.751651" elapsed="0.000123"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Name: ${name}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.751844" elapsed="0.000087"/>
+<status status="PASS" start="2025-09-25T13:48:09.577139" elapsed="0.000116"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.752086" level="INFO">${spent_locator} = (//table//tbody//tr)[5]/td[5]</msg>
+<msg time="2025-09-25T13:48:09.577413" level="INFO">${spent_locator} = (//table//tbody//tr)[5]/td[5]</msg>
 <var>${spent_locator}</var>
 <arg>${current_row_locator}/td[5]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.752000" elapsed="0.000125"/>
+<status status="PASS" start="2025-09-25T13:48:09.577323" elapsed="0.000130"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:00.762076" level="INFO">${spent_text} = $0.00</msg>
+<msg time="2025-09-25T13:48:09.587637" level="INFO">${spent_text} = $236.07</msg>
 <var>${spent_text}</var>
 <arg>${spent_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.752192" elapsed="0.010017"/>
+<status status="PASS" start="2025-09-25T13:48:09.577518" elapsed="0.010229"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.762539" level="INFO">${spent_text} = 0.00</msg>
+<msg time="2025-09-25T13:48:09.588115" level="INFO">${spent_text} = 236.07</msg>
 <var>${spent_text}</var>
 <arg>"""${spent_text}""".replace("$","").replace(",","").strip()</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.762336" elapsed="0.000244"/>
+<status status="PASS" start="2025-09-25T13:48:09.587876" elapsed="0.000284"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.762792" level="INFO">${spent} = 0</msg>
+<msg time="2025-09-25T13:48:09.588365" level="INFO">${spent} = 236</msg>
 <var>${spent}</var>
 <arg>int(${spent_text}) if ${spent_text} else 0</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.762651" elapsed="0.000178"/>
+<status status="PASS" start="2025-09-25T13:48:09.588233" elapsed="0.000174"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Total spent: $${spent}</arg>
+<arg>$${spent}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.762896" elapsed="0.000101"/>
+<status status="PASS" start="2025-09-25T13:48:09.588475" elapsed="0.000110"/>
 </kw>
 <if>
 <branch type="IF" condition="${spent} &gt; 0">
 <kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-09-25T13:48:09.588992" level="INFO">${user} = {'name': 'Wyman', 'spent': 236}</msg>
 <var>${user}</var>
 <arg>name=${name}</arg>
 <arg>spent=${spent}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:00.763175" elapsed="0.000038"/>
+<status status="PASS" start="2025-09-25T13:48:09.588761" elapsed="0.000295"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${users_with_spent}</arg>
 <arg>${user}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:00.763278" elapsed="0.000033"/>
+<status status="PASS" start="2025-09-25T13:48:09.589147" elapsed="0.000117"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-09-25T13:48:09.589475" level="INFO">${total_spent} = 3090</msg>
 <var>${total_spent}</var>
 <arg>${total_spent} + ${spent}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:00.763369" elapsed="0.000031"/>
+<status status="PASS" start="2025-09-25T13:48:09.589339" elapsed="0.000181"/>
 </kw>
-<status status="NOT RUN" start="2025-09-25T12:37:00.763066" elapsed="0.000368"/>
+<status status="PASS" start="2025-09-25T13:48:09.588650" elapsed="0.000911"/>
 </branch>
-<status status="PASS" start="2025-09-25T12:37:00.763051" elapsed="0.000419"/>
+<status status="PASS" start="2025-09-25T13:48:09.588636" elapsed="0.000972"/>
 </if>
 <var name="${i}">5</var>
-<status status="PASS" start="2025-09-25T12:37:00.706599" elapsed="0.056884"/>
+<status status="PASS" start="2025-09-25T13:48:09.564911" elapsed="0.024711"/>
 </iter>
 <iter>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.763754" level="INFO">${current_row_locator} = (//table//tbody//tr)[6]</msg>
+<msg time="2025-09-25T13:48:09.589954" level="INFO">${current_row_locator} = (//table//tbody//tr)[6]</msg>
 <var>${current_row_locator}</var>
 <arg>(${table_row})[${i}]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.763657" elapsed="0.000138"/>
+<status status="PASS" start="2025-09-25T13:48:09.589815" elapsed="0.000225"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.763938" level="INFO">${name_locator} = (//table//tbody//tr)[6]/td[2]//a/div</msg>
+<msg time="2025-09-25T13:48:09.590382" level="INFO">${name_locator} = (//table//tbody//tr)[6]/td[2]//a/div</msg>
 <var>${name_locator}</var>
 <arg>${current_row_locator}/td[2]//a/div</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.763855" elapsed="0.000120"/>
+<status status="PASS" start="2025-09-25T13:48:09.590174" elapsed="0.000262"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:00.774800" level="INFO">${raw_name} = Florencio Bernhard</msg>
+<msg time="2025-09-25T13:48:09.602245" level="INFO">${raw_name} = Thurman Parker</msg>
 <var>${raw_name}</var>
 <arg>${name_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.764037" elapsed="0.010860"/>
+<status status="PASS" start="2025-09-25T13:48:09.590553" elapsed="0.011800"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.775192" level="INFO">${name} = Bernhard</msg>
+<msg time="2025-09-25T13:48:09.602665" level="INFO">${name} = Parker</msg>
 <var>${name}</var>
 <arg>" ".join("""${raw_name}""".split()[1:])</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.775018" elapsed="0.000217"/>
+<status status="PASS" start="2025-09-25T13:48:09.602485" elapsed="0.000229"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>\n====== User ${i} ======</arg>
+<arg>\n${name}:</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.775304" elapsed="0.000120"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Name: ${name}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.775494" elapsed="0.000136"/>
+<status status="PASS" start="2025-09-25T13:48:09.602784" elapsed="0.000113"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.775830" level="INFO">${spent_locator} = (//table//tbody//tr)[6]/td[5]</msg>
+<msg time="2025-09-25T13:48:09.603065" level="INFO">${spent_locator} = (//table//tbody//tr)[6]/td[5]</msg>
 <var>${spent_locator}</var>
 <arg>${current_row_locator}/td[5]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.775725" elapsed="0.000153"/>
+<status status="PASS" start="2025-09-25T13:48:09.602968" elapsed="0.000137"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:00.785680" level="INFO">${spent_text} = $0.00</msg>
+<msg time="2025-09-25T13:48:09.613256" level="INFO">${spent_text} = $235.14</msg>
 <var>${spent_text}</var>
 <arg>${spent_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.776080" elapsed="0.009693"/>
+<status status="PASS" start="2025-09-25T13:48:09.603174" elapsed="0.010182"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.786084" level="INFO">${spent_text} = 0.00</msg>
+<msg time="2025-09-25T13:48:09.613685" level="INFO">${spent_text} = 235.14</msg>
 <var>${spent_text}</var>
 <arg>"""${spent_text}""".replace("$","").replace(",","").strip()</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.785892" elapsed="0.000234"/>
+<status status="PASS" start="2025-09-25T13:48:09.613477" elapsed="0.000255"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.786321" level="INFO">${spent} = 0</msg>
+<msg time="2025-09-25T13:48:09.613937" level="INFO">${spent} = 235</msg>
 <var>${spent}</var>
 <arg>int(${spent_text}) if ${spent_text} else 0</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.786197" elapsed="0.000246"/>
+<status status="PASS" start="2025-09-25T13:48:09.613807" elapsed="0.000280"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Total spent: $${spent}</arg>
+<arg>$${spent}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.786512" elapsed="0.000109"/>
+<status status="PASS" start="2025-09-25T13:48:09.614169" elapsed="0.000113"/>
 </kw>
 <if>
 <branch type="IF" condition="${spent} &gt; 0">
 <kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-09-25T13:48:09.615149" level="INFO">${user} = {'name': 'Parker', 'spent': 235}</msg>
 <var>${user}</var>
 <arg>name=${name}</arg>
 <arg>spent=${spent}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:00.786795" elapsed="0.000037"/>
+<status status="PASS" start="2025-09-25T13:48:09.614633" elapsed="0.000581"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${users_with_spent}</arg>
 <arg>${user}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:00.786900" elapsed="0.000032"/>
+<status status="PASS" start="2025-09-25T13:48:09.615306" elapsed="0.000115"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-09-25T13:48:09.615624" level="INFO">${total_spent} = 3325</msg>
 <var>${total_spent}</var>
 <arg>${total_spent} + ${spent}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:00.786993" elapsed="0.000036"/>
+<status status="PASS" start="2025-09-25T13:48:09.615494" elapsed="0.000174"/>
 </kw>
-<status status="NOT RUN" start="2025-09-25T12:37:00.786688" elapsed="0.000377"/>
+<status status="PASS" start="2025-09-25T13:48:09.614378" elapsed="0.001330"/>
 </branch>
-<status status="PASS" start="2025-09-25T12:37:00.786674" elapsed="0.000430"/>
+<status status="PASS" start="2025-09-25T13:48:09.614338" elapsed="0.001410"/>
 </if>
 <var name="${i}">6</var>
-<status status="PASS" start="2025-09-25T12:37:00.763593" elapsed="0.023525"/>
+<status status="PASS" start="2025-09-25T13:48:09.589741" elapsed="0.026021"/>
 </iter>
 <iter>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.787393" level="INFO">${current_row_locator} = (//table//tbody//tr)[7]</msg>
+<msg time="2025-09-25T13:48:09.616066" level="INFO">${current_row_locator} = (//table//tbody//tr)[7]</msg>
 <var>${current_row_locator}</var>
 <arg>(${table_row})[${i}]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.787293" elapsed="0.000155"/>
+<status status="PASS" start="2025-09-25T13:48:09.615957" elapsed="0.000160"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.787590" level="INFO">${name_locator} = (//table//tbody//tr)[7]/td[2]//a/div</msg>
+<msg time="2025-09-25T13:48:09.616274" level="INFO">${name_locator} = (//table//tbody//tr)[7]/td[2]//a/div</msg>
 <var>${name_locator}</var>
 <arg>${current_row_locator}/td[2]//a/div</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.787509" elapsed="0.000119"/>
+<status status="PASS" start="2025-09-25T13:48:09.616183" elapsed="0.000129"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:00.798409" level="INFO">${raw_name} = Ethel Zemlak</msg>
+<msg time="2025-09-25T13:48:09.627072" level="INFO">${raw_name} = Gertrude Bechtelar</msg>
 <var>${raw_name}</var>
 <arg>${name_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.787691" elapsed="0.010812"/>
+<status status="PASS" start="2025-09-25T13:48:09.616378" elapsed="0.010808"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.798793" level="INFO">${name} = Zemlak</msg>
+<msg time="2025-09-25T13:48:09.627489" level="INFO">${name} = Bechtelar</msg>
 <var>${name}</var>
 <arg>" ".join("""${raw_name}""".split()[1:])</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.798623" elapsed="0.000213"/>
+<status status="PASS" start="2025-09-25T13:48:09.627309" elapsed="0.000226"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>\n====== User ${i} ======</arg>
+<arg>\n${name}:</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.798906" elapsed="0.000120"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Name: ${name}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.799096" elapsed="0.000087"/>
+<status status="PASS" start="2025-09-25T13:48:09.627605" elapsed="0.000121"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.799427" level="INFO">${spent_locator} = (//table//tbody//tr)[7]/td[5]</msg>
+<msg time="2025-09-25T13:48:09.627899" level="INFO">${spent_locator} = (//table//tbody//tr)[7]/td[5]</msg>
 <var>${spent_locator}</var>
 <arg>${current_row_locator}/td[5]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.799302" elapsed="0.000173"/>
+<status status="PASS" start="2025-09-25T13:48:09.627798" elapsed="0.000142"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:00.835316" level="INFO">${spent_text} = $0.00</msg>
+<msg time="2025-09-25T13:48:09.638231" level="INFO">${spent_text} = $0.00</msg>
 <var>${spent_text}</var>
 <arg>${spent_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.799551" elapsed="0.035879"/>
+<status status="PASS" start="2025-09-25T13:48:09.628009" elapsed="0.010318"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.835819" level="INFO">${spent_text} = 0.00</msg>
+<msg time="2025-09-25T13:48:09.638634" level="INFO">${spent_text} = 0.00</msg>
 <var>${spent_text}</var>
 <arg>"""${spent_text}""".replace("$","").replace(",","").strip()</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.835574" elapsed="0.000294"/>
+<status status="PASS" start="2025-09-25T13:48:09.638444" elapsed="0.000233"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.836088" level="INFO">${spent} = 0</msg>
+<msg time="2025-09-25T13:48:09.638923" level="INFO">${spent} = 0</msg>
 <var>${spent}</var>
 <arg>int(${spent_text}) if ${spent_text} else 0</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.835950" elapsed="0.000179"/>
+<status status="PASS" start="2025-09-25T13:48:09.638748" elapsed="0.000218"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Total spent: $${spent}</arg>
+<arg>$${spent}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.836204" elapsed="0.000122"/>
+<status status="PASS" start="2025-09-25T13:48:09.639037" elapsed="0.000116"/>
 </kw>
 <if>
 <branch type="IF" condition="${spent} &gt; 0">
@@ -831,98 +802,94 @@
 <arg>name=${name}</arg>
 <arg>spent=${spent}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:00.836649" elapsed="0.000042"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.639339" elapsed="0.000040"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${users_with_spent}</arg>
 <arg>${user}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:00.836760" elapsed="0.000035"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.639444" elapsed="0.000037"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
 <var>${total_spent}</var>
 <arg>${total_spent} + ${spent}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:00.836861" elapsed="0.000035"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.639553" elapsed="0.000194"/>
 </kw>
-<status status="NOT RUN" start="2025-09-25T12:37:00.836399" elapsed="0.000535"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.639223" elapsed="0.000697"/>
 </branch>
-<status status="PASS" start="2025-09-25T12:37:00.836382" elapsed="0.000592"/>
+<status status="PASS" start="2025-09-25T13:48:09.639206" elapsed="0.000921"/>
 </if>
 <var name="${i}">7</var>
-<status status="PASS" start="2025-09-25T12:37:00.787232" elapsed="0.049758"/>
+<status status="PASS" start="2025-09-25T13:48:09.615882" elapsed="0.024362"/>
 </iter>
 <iter>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.837305" level="INFO">${current_row_locator} = (//table//tbody//tr)[8]</msg>
+<msg time="2025-09-25T13:48:09.641207" level="INFO">${current_row_locator} = (//table//tbody//tr)[8]</msg>
 <var>${current_row_locator}</var>
 <arg>(${table_row})[${i}]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.837190" elapsed="0.000172"/>
+<status status="PASS" start="2025-09-25T13:48:09.640979" elapsed="0.000319"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.838194" level="INFO">${name_locator} = (//table//tbody//tr)[8]/td[2]//a/div</msg>
+<msg time="2025-09-25T13:48:09.641552" level="INFO">${name_locator} = (//table//tbody//tr)[8]/td[2]//a/div</msg>
 <var>${name_locator}</var>
 <arg>${current_row_locator}/td[2]//a/div</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.837685" elapsed="0.001061"/>
+<status status="PASS" start="2025-09-25T13:48:09.641432" elapsed="0.000170"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:00.852486" level="INFO">${raw_name} = Lyric Nader</msg>
+<msg time="2025-09-25T13:48:09.686404" level="INFO">${raw_name} = A
+Alford O'Connell</msg>
 <var>${raw_name}</var>
 <arg>${name_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.839141" elapsed="0.013444"/>
+<status status="PASS" start="2025-09-25T13:48:09.641677" elapsed="0.044859"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.853037" level="INFO">${name} = Nader</msg>
+<msg time="2025-09-25T13:48:09.686893" level="INFO">${name} = Alford O'Connell</msg>
 <var>${name}</var>
 <arg>" ".join("""${raw_name}""".split()[1:])</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.852823" elapsed="0.000270"/>
+<status status="PASS" start="2025-09-25T13:48:09.686686" elapsed="0.000259"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>\n====== User ${i} ======</arg>
+<arg>\n${name}:</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.853182" elapsed="0.000262"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Name: ${name}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.853615" elapsed="0.000165"/>
+<status status="PASS" start="2025-09-25T13:48:09.687025" elapsed="0.000132"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.854002" level="INFO">${spent_locator} = (//table//tbody//tr)[8]/td[5]</msg>
+<msg time="2025-09-25T13:48:09.687332" level="INFO">${spent_locator} = (//table//tbody//tr)[8]/td[5]</msg>
 <var>${spent_locator}</var>
 <arg>${current_row_locator}/td[5]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.853876" elapsed="0.000191"/>
+<status status="PASS" start="2025-09-25T13:48:09.687232" elapsed="0.000146"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:00.864521" level="INFO">${spent_text} = $0.00</msg>
+<msg time="2025-09-25T13:48:09.700291" level="INFO">${spent_text} = $0.00</msg>
 <var>${spent_text}</var>
 <arg>${spent_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.854152" elapsed="0.010458"/>
+<status status="PASS" start="2025-09-25T13:48:09.687456" elapsed="0.012939"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.864924" level="INFO">${spent_text} = 0.00</msg>
+<msg time="2025-09-25T13:48:09.700729" level="INFO">${spent_text} = 0.00</msg>
 <var>${spent_text}</var>
 <arg>"""${spent_text}""".replace("$","").replace(",","").strip()</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.864731" elapsed="0.000235"/>
+<status status="PASS" start="2025-09-25T13:48:09.700522" elapsed="0.000250"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.865164" level="INFO">${spent} = 0</msg>
+<msg time="2025-09-25T13:48:09.700968" level="INFO">${spent} = 0</msg>
 <var>${spent}</var>
 <arg>int(${spent_text}) if ${spent_text} else 0</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.865039" elapsed="0.000163"/>
+<status status="PASS" start="2025-09-25T13:48:09.700844" elapsed="0.000162"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Total spent: $${spent}</arg>
+<arg>$${spent}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.865271" elapsed="0.000101"/>
+<status status="PASS" start="2025-09-25T13:48:09.701072" elapsed="0.000113"/>
 </kw>
 <if>
 <branch type="IF" condition="${spent} &gt; 0">
@@ -931,98 +898,94 @@
 <arg>name=${name}</arg>
 <arg>spent=${spent}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:00.865545" elapsed="0.000036"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.701367" elapsed="0.000036"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${users_with_spent}</arg>
 <arg>${user}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:00.865645" elapsed="0.000033"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.701466" elapsed="0.000033"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
 <var>${total_spent}</var>
 <arg>${total_spent} + ${spent}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:00.865736" elapsed="0.000032"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.701556" elapsed="0.000031"/>
 </kw>
-<status status="NOT RUN" start="2025-09-25T12:37:00.865438" elapsed="0.000364"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.701249" elapsed="0.000371"/>
 </branch>
-<status status="PASS" start="2025-09-25T12:37:00.865424" elapsed="0.000414"/>
+<status status="PASS" start="2025-09-25T13:48:09.701235" elapsed="0.000419"/>
 </if>
 <var name="${i}">8</var>
-<status status="PASS" start="2025-09-25T12:37:00.837120" elapsed="0.028731"/>
+<status status="PASS" start="2025-09-25T13:48:09.640674" elapsed="0.060992"/>
 </iter>
 <iter>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.866121" level="INFO">${current_row_locator} = (//table//tbody//tr)[9]</msg>
+<msg time="2025-09-25T13:48:09.701941" level="INFO">${current_row_locator} = (//table//tbody//tr)[9]</msg>
 <var>${current_row_locator}</var>
 <arg>(${table_row})[${i}]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.866022" elapsed="0.000140"/>
+<status status="PASS" start="2025-09-25T13:48:09.701842" elapsed="0.000140"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.866311" level="INFO">${name_locator} = (//table//tbody//tr)[9]/td[2]//a/div</msg>
+<msg time="2025-09-25T13:48:09.702135" level="INFO">${name_locator} = (//table//tbody//tr)[9]/td[2]//a/div</msg>
 <var>${name_locator}</var>
 <arg>${current_row_locator}/td[2]//a/div</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.866226" elapsed="0.000123"/>
+<status status="PASS" start="2025-09-25T13:48:09.702044" elapsed="0.000130"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:00.877922" level="INFO">${raw_name} = Maud Hodkiewicz</msg>
+<msg time="2025-09-25T13:48:09.712578" level="INFO">${raw_name} = R
+Reyes Lowe</msg>
 <var>${raw_name}</var>
 <arg>${name_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.866416" elapsed="0.011600"/>
+<status status="PASS" start="2025-09-25T13:48:09.702238" elapsed="0.010444"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.878309" level="INFO">${name} = Hodkiewicz</msg>
+<msg time="2025-09-25T13:48:09.712980" level="INFO">${name} = Reyes Lowe</msg>
 <var>${name}</var>
 <arg>" ".join("""${raw_name}""".split()[1:])</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.878141" elapsed="0.000212"/>
+<status status="PASS" start="2025-09-25T13:48:09.712804" elapsed="0.000220"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>\n====== User ${i} ======</arg>
+<arg>\n${name}:</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.878425" elapsed="0.000130"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Name: ${name}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.878625" elapsed="0.000100"/>
+<status status="PASS" start="2025-09-25T13:48:09.713107" elapsed="0.000117"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.878953" level="INFO">${spent_locator} = (//table//tbody//tr)[9]/td[5]</msg>
+<msg time="2025-09-25T13:48:09.713397" level="INFO">${spent_locator} = (//table//tbody//tr)[9]/td[5]</msg>
 <var>${spent_locator}</var>
 <arg>${current_row_locator}/td[5]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.878836" elapsed="0.000166"/>
+<status status="PASS" start="2025-09-25T13:48:09.713295" elapsed="0.000146"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:00.888790" level="INFO">${spent_text} = $0.00</msg>
+<msg time="2025-09-25T13:48:09.724555" level="INFO">${spent_text} = $0.00</msg>
 <var>${spent_text}</var>
 <arg>${spent_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.879084" elapsed="0.009803"/>
+<status status="PASS" start="2025-09-25T13:48:09.713514" elapsed="0.011143"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.889218" level="INFO">${spent_text} = 0.00</msg>
+<msg time="2025-09-25T13:48:09.724985" level="INFO">${spent_text} = 0.00</msg>
 <var>${spent_text}</var>
 <arg>"""${spent_text}""".replace("$","").replace(",","").strip()</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.889013" elapsed="0.000249"/>
+<status status="PASS" start="2025-09-25T13:48:09.724778" elapsed="0.000250"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.889466" level="INFO">${spent} = 0</msg>
+<msg time="2025-09-25T13:48:09.725232" level="INFO">${spent} = 0</msg>
 <var>${spent}</var>
 <arg>int(${spent_text}) if ${spent_text} else 0</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.889338" elapsed="0.000169"/>
+<status status="PASS" start="2025-09-25T13:48:09.725100" elapsed="0.000170"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Total spent: $${spent}</arg>
+<arg>$${spent}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.889632" elapsed="0.000296"/>
+<status status="PASS" start="2025-09-25T13:48:09.725337" elapsed="0.000102"/>
 </kw>
 <if>
 <branch type="IF" condition="${spent} &gt; 0">
@@ -1031,98 +994,94 @@
 <arg>name=${name}</arg>
 <arg>spent=${spent}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:00.890173" elapsed="0.000049"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.725618" elapsed="0.000041"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${users_with_spent}</arg>
 <arg>${user}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:00.890355" elapsed="0.000059"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.726431" elapsed="0.000046"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
 <var>${total_spent}</var>
 <arg>${total_spent} + ${spent}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:00.890494" elapsed="0.000054"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.726546" elapsed="0.000035"/>
 </kw>
-<status status="NOT RUN" start="2025-09-25T12:37:00.890011" elapsed="0.000584"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.725508" elapsed="0.001108"/>
 </branch>
-<status status="PASS" start="2025-09-25T12:37:00.889994" elapsed="0.000643"/>
+<status status="PASS" start="2025-09-25T13:48:09.725493" elapsed="0.001160"/>
 </if>
 <var name="${i}">9</var>
-<status status="PASS" start="2025-09-25T12:37:00.865958" elapsed="0.024693"/>
+<status status="PASS" start="2025-09-25T13:48:09.701777" elapsed="0.024888"/>
 </iter>
 <iter>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.891112" level="INFO">${current_row_locator} = (//table//tbody//tr)[10]</msg>
+<msg time="2025-09-25T13:48:09.726950" level="INFO">${current_row_locator} = (//table//tbody//tr)[10]</msg>
 <var>${current_row_locator}</var>
 <arg>(${table_row})[${i}]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.890927" elapsed="0.000298"/>
+<status status="PASS" start="2025-09-25T13:48:09.726846" elapsed="0.000148"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.891411" level="INFO">${name_locator} = (//table//tbody//tr)[10]/td[2]//a/div</msg>
+<msg time="2025-09-25T13:48:09.727139" level="INFO">${name_locator} = (//table//tbody//tr)[10]/td[2]//a/div</msg>
 <var>${name_locator}</var>
 <arg>${current_row_locator}/td[2]//a/div</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.891302" elapsed="0.000153"/>
+<status status="PASS" start="2025-09-25T13:48:09.727056" elapsed="0.000121"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:00.927704" level="INFO">${raw_name} = Rodolfo Jenkins</msg>
+<msg time="2025-09-25T13:48:09.738214" level="INFO">${raw_name} = V
+Vernice Leuschke</msg>
 <var>${raw_name}</var>
 <arg>${name_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.891528" elapsed="0.036296"/>
+<status status="PASS" start="2025-09-25T13:48:09.727243" elapsed="0.011068"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.928178" level="INFO">${name} = Jenkins</msg>
+<msg time="2025-09-25T13:48:09.738606" level="INFO">${name} = Vernice Leuschke</msg>
 <var>${name}</var>
 <arg>" ".join("""${raw_name}""".split()[1:])</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.927978" elapsed="0.000250"/>
+<status status="PASS" start="2025-09-25T13:48:09.738431" elapsed="0.000218"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>\n====== User ${i} ======</arg>
+<arg>\n${name}:</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.928306" elapsed="0.000349"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Name: ${name}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.931643" elapsed="0.000681"/>
+<status status="PASS" start="2025-09-25T13:48:09.738947" elapsed="0.000196"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.932681" level="INFO">${spent_locator} = (//table//tbody//tr)[10]/td[5]</msg>
+<msg time="2025-09-25T13:48:09.739483" level="INFO">${spent_locator} = (//table//tbody//tr)[10]/td[5]</msg>
 <var>${spent_locator}</var>
 <arg>${current_row_locator}/td[5]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.932556" elapsed="0.000192"/>
+<status status="PASS" start="2025-09-25T13:48:09.739304" elapsed="0.000227"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:00.945287" level="INFO">${spent_text} = $0.00</msg>
+<msg time="2025-09-25T13:48:09.750081" level="INFO">${spent_text} = $0.00</msg>
 <var>${spent_text}</var>
 <arg>${spent_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.932833" elapsed="0.012560"/>
+<status status="PASS" start="2025-09-25T13:48:09.739616" elapsed="0.010557"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.945734" level="INFO">${spent_text} = 0.00</msg>
+<msg time="2025-09-25T13:48:09.750511" level="INFO">${spent_text} = 0.00</msg>
 <var>${spent_text}</var>
 <arg>"""${spent_text}""".replace("$","").replace(",","").strip()</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.945531" elapsed="0.000245"/>
+<status status="PASS" start="2025-09-25T13:48:09.750302" elapsed="0.000259"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.945974" level="INFO">${spent} = 0</msg>
+<msg time="2025-09-25T13:48:09.750751" level="INFO">${spent} = 0</msg>
 <var>${spent}</var>
 <arg>int(${spent_text}) if ${spent_text} else 0</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.945849" elapsed="0.000162"/>
+<status status="PASS" start="2025-09-25T13:48:09.750632" elapsed="0.000161"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Total spent: $${spent}</arg>
+<arg>$${spent}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.946092" elapsed="0.000100"/>
+<status status="PASS" start="2025-09-25T13:48:09.750858" elapsed="0.000105"/>
 </kw>
 <if>
 <branch type="IF" condition="${spent} &gt; 0">
@@ -1131,200 +1090,190 @@
 <arg>name=${name}</arg>
 <arg>spent=${spent}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:00.946362" elapsed="0.000038"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.751138" elapsed="0.000036"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${users_with_spent}</arg>
 <arg>${user}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:00.946466" elapsed="0.000031"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.751236" elapsed="0.000046"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
 <var>${total_spent}</var>
 <arg>${total_spent} + ${spent}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:00.946562" elapsed="0.000033"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.751343" elapsed="0.000032"/>
 </kw>
-<status status="NOT RUN" start="2025-09-25T12:37:00.946259" elapsed="0.000371"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.751031" elapsed="0.000379"/>
 </branch>
-<status status="PASS" start="2025-09-25T12:37:00.946245" elapsed="0.000420"/>
+<status status="PASS" start="2025-09-25T13:48:09.751018" elapsed="0.000432"/>
 </if>
 <var name="${i}">10</var>
-<status status="PASS" start="2025-09-25T12:37:00.890848" elapsed="0.055829"/>
+<status status="PASS" start="2025-09-25T13:48:09.726782" elapsed="0.024680"/>
 </iter>
 <iter>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.946953" level="INFO">${current_row_locator} = (//table//tbody//tr)[11]</msg>
+<msg time="2025-09-25T13:48:09.751754" level="INFO">${current_row_locator} = (//table//tbody//tr)[11]</msg>
 <var>${current_row_locator}</var>
 <arg>(${table_row})[${i}]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.946853" elapsed="0.000142"/>
+<status status="PASS" start="2025-09-25T13:48:09.751651" elapsed="0.000148"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.947149" level="INFO">${name_locator} = (//table//tbody//tr)[11]/td[2]//a/div</msg>
+<msg time="2025-09-25T13:48:09.751956" level="INFO">${name_locator} = (//table//tbody//tr)[11]/td[2]//a/div</msg>
 <var>${name_locator}</var>
 <arg>${current_row_locator}/td[2]//a/div</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.947058" elapsed="0.000130"/>
+<status status="PASS" start="2025-09-25T13:48:09.751866" elapsed="0.000130"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:00.957937" level="INFO">${raw_name} = Virgil Marks</msg>
+<msg time="2025-09-25T13:48:09.762892" level="INFO">${raw_name} = M
+Marianne Hilpert</msg>
 <var>${raw_name}</var>
 <arg>${name_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.947253" elapsed="0.010779"/>
+<status status="PASS" start="2025-09-25T13:48:09.752068" elapsed="0.010927"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.958324" level="INFO">${name} = Marks</msg>
+<msg time="2025-09-25T13:48:09.763303" level="INFO">${name} = Marianne Hilpert</msg>
 <var>${name}</var>
 <arg>" ".join("""${raw_name}""".split()[1:])</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.958151" elapsed="0.000216"/>
+<status status="PASS" start="2025-09-25T13:48:09.763128" elapsed="0.000232"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>\n====== User ${i} ======</arg>
+<arg>\n${name}:</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.958437" elapsed="0.000120"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Name: ${name}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.958629" elapsed="0.000094"/>
+<status status="PASS" start="2025-09-25T13:48:09.763437" elapsed="0.000140"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.958884" level="INFO">${spent_locator} = (//table//tbody//tr)[11]/td[5]</msg>
+<msg time="2025-09-25T13:48:09.763820" level="INFO">${spent_locator} = (//table//tbody//tr)[11]/td[5]</msg>
 <var>${spent_locator}</var>
 <arg>${current_row_locator}/td[5]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.958795" elapsed="0.000129"/>
+<status status="PASS" start="2025-09-25T13:48:09.763716" elapsed="0.000146"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:00.968863" level="INFO">${spent_text} = $200.93</msg>
+<msg time="2025-09-25T13:48:09.800195" level="INFO">${spent_text} = $0.00</msg>
 <var>${spent_text}</var>
 <arg>${spent_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.958991" elapsed="0.009970"/>
+<status status="PASS" start="2025-09-25T13:48:09.763939" elapsed="0.036407"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.969277" level="INFO">${spent_text} = 200.93</msg>
+<msg time="2025-09-25T13:48:09.800736" level="INFO">${spent_text} = 0.00</msg>
 <var>${spent_text}</var>
 <arg>"""${spent_text}""".replace("$","").replace(",","").strip()</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.969087" elapsed="0.000235"/>
+<status status="PASS" start="2025-09-25T13:48:09.800491" elapsed="0.000295"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.969519" level="INFO">${spent} = 200</msg>
+<msg time="2025-09-25T13:48:09.801000" level="INFO">${spent} = 0</msg>
 <var>${spent}</var>
 <arg>int(${spent_text}) if ${spent_text} else 0</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.969393" elapsed="0.000165"/>
+<status status="PASS" start="2025-09-25T13:48:09.800866" elapsed="0.000174"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Total spent: $${spent}</arg>
+<arg>$${spent}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.969624" elapsed="0.000106"/>
+<status status="PASS" start="2025-09-25T13:48:09.801112" elapsed="0.001710"/>
 </kw>
 <if>
 <branch type="IF" condition="${spent} &gt; 0">
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.970338" level="INFO">${user} = {'name': 'Marks', 'spent': 200}</msg>
 <var>${user}</var>
 <arg>name=${name}</arg>
 <arg>spent=${spent}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.970072" elapsed="0.000323"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.803551" elapsed="0.000054"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${users_with_spent}</arg>
 <arg>${user}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.970498" elapsed="0.000106"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.803691" elapsed="0.000041"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.970796" level="INFO">${total_spent} = 770</msg>
 <var>${total_spent}</var>
 <arg>${total_spent} + ${spent}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.970677" elapsed="0.000213"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.803800" elapsed="0.000036"/>
 </kw>
-<status status="PASS" start="2025-09-25T12:37:00.969795" elapsed="0.001142"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.803332" elapsed="0.000544"/>
 </branch>
-<status status="PASS" start="2025-09-25T12:37:00.969781" elapsed="0.001200"/>
+<status status="PASS" start="2025-09-25T13:48:09.803308" elapsed="0.000608"/>
 </if>
 <var name="${i}">11</var>
-<status status="PASS" start="2025-09-25T12:37:00.946789" elapsed="0.024207"/>
+<status status="PASS" start="2025-09-25T13:48:09.751580" elapsed="0.052351"/>
 </iter>
 <iter>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.971378" level="INFO">${current_row_locator} = (//table//tbody//tr)[12]</msg>
+<msg time="2025-09-25T13:48:09.804302" level="INFO">${current_row_locator} = (//table//tbody//tr)[12]</msg>
 <var>${current_row_locator}</var>
 <arg>(${table_row})[${i}]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.971255" elapsed="0.000173"/>
+<status status="PASS" start="2025-09-25T13:48:09.804141" elapsed="0.000232"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.971599" level="INFO">${name_locator} = (//table//tbody//tr)[12]/td[2]//a/div</msg>
+<msg time="2025-09-25T13:48:09.804592" level="INFO">${name_locator} = (//table//tbody//tr)[12]/td[2]//a/div</msg>
 <var>${name_locator}</var>
 <arg>${current_row_locator}/td[2]//a/div</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.971504" elapsed="0.000136"/>
+<status status="PASS" start="2025-09-25T13:48:09.804446" elapsed="0.000192"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:00.982678" level="INFO">${raw_name} = Consuelo Berge</msg>
+<msg time="2025-09-25T13:48:09.818368" level="INFO">${raw_name} = J
+Joshua McCullough</msg>
 <var>${raw_name}</var>
 <arg>${name_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.971712" elapsed="0.011062"/>
+<status status="PASS" start="2025-09-25T13:48:09.804715" elapsed="0.013857"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.983104" level="INFO">${name} = Berge</msg>
+<msg time="2025-09-25T13:48:09.818920" level="INFO">${name} = Joshua McCullough</msg>
 <var>${name}</var>
 <arg>" ".join("""${raw_name}""".split()[1:])</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.982909" elapsed="0.000241"/>
+<status status="PASS" start="2025-09-25T13:48:09.818724" elapsed="0.000252"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>\n====== User ${i} ======</arg>
+<arg>\n${name}:</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.983222" elapsed="0.000124"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Name: ${name}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.983417" elapsed="0.000091"/>
+<status status="PASS" start="2025-09-25T13:48:09.819056" elapsed="0.000128"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:00.983669" level="INFO">${spent_locator} = (//table//tbody//tr)[12]/td[5]</msg>
+<msg time="2025-09-25T13:48:09.819499" level="INFO">${spent_locator} = (//table//tbody//tr)[12]/td[5]</msg>
 <var>${spent_locator}</var>
 <arg>${current_row_locator}/td[5]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.983578" elapsed="0.000144"/>
+<status status="PASS" start="2025-09-25T13:48:09.819339" elapsed="0.000209"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:01.028939" level="INFO">${spent_text} = $0.00</msg>
+<msg time="2025-09-25T13:48:09.829563" level="INFO">${spent_text} = $0.00</msg>
 <var>${spent_text}</var>
 <arg>${spent_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:00.983792" elapsed="0.045291"/>
+<status status="PASS" start="2025-09-25T13:48:09.819633" elapsed="0.010029"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.029517" level="INFO">${spent_text} = 0.00</msg>
+<msg time="2025-09-25T13:48:09.829993" level="INFO">${spent_text} = 0.00</msg>
 <var>${spent_text}</var>
 <arg>"""${spent_text}""".replace("$","").replace(",","").strip()</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.029231" elapsed="0.000354"/>
+<status status="PASS" start="2025-09-25T13:48:09.829795" elapsed="0.000240"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.029877" level="INFO">${spent} = 0</msg>
+<msg time="2025-09-25T13:48:09.830239" level="INFO">${spent} = 0</msg>
 <var>${spent}</var>
 <arg>int(${spent_text}) if ${spent_text} else 0</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.029683" elapsed="0.000240"/>
+<status status="PASS" start="2025-09-25T13:48:09.830110" elapsed="0.000168"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Total spent: $${spent}</arg>
+<arg>$${spent}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.030001" elapsed="0.000158"/>
+<status status="PASS" start="2025-09-25T13:48:09.830350" elapsed="0.000115"/>
 </kw>
 <if>
 <branch type="IF" condition="${spent} &gt; 0">
@@ -1333,505 +1282,478 @@
 <arg>name=${name}</arg>
 <arg>spent=${spent}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:01.030358" elapsed="0.000132"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.830648" elapsed="0.000039"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${users_with_spent}</arg>
 <arg>${user}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:01.030805" elapsed="0.000133"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.830752" elapsed="0.000035"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
 <var>${total_spent}</var>
 <arg>${total_spent} + ${spent}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:01.031309" elapsed="0.000073"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.830950" elapsed="0.000037"/>
 </kw>
-<status status="NOT RUN" start="2025-09-25T12:37:01.030235" elapsed="0.001247"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.830536" elapsed="0.000487"/>
 </branch>
-<status status="PASS" start="2025-09-25T12:37:01.030218" elapsed="0.001315"/>
+<status status="PASS" start="2025-09-25T13:48:09.830520" elapsed="0.000541"/>
 </if>
 <var name="${i}">12</var>
-<status status="PASS" start="2025-09-25T12:37:00.971167" elapsed="0.060384"/>
+<status status="PASS" start="2025-09-25T13:48:09.804065" elapsed="0.027010"/>
 </iter>
 <iter>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.031984" level="INFO">${current_row_locator} = (//table//tbody//tr)[13]</msg>
+<msg time="2025-09-25T13:48:09.831365" level="INFO">${current_row_locator} = (//table//tbody//tr)[13]</msg>
 <var>${current_row_locator}</var>
 <arg>(${table_row})[${i}]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.031797" elapsed="0.000263"/>
+<status status="PASS" start="2025-09-25T13:48:09.831260" elapsed="0.000151"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.032268" level="INFO">${name_locator} = (//table//tbody//tr)[13]/td[2]//a/div</msg>
+<msg time="2025-09-25T13:48:09.831564" level="INFO">${name_locator} = (//table//tbody//tr)[13]/td[2]//a/div</msg>
 <var>${name_locator}</var>
 <arg>${current_row_locator}/td[2]//a/div</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.032153" elapsed="0.000193"/>
+<status status="PASS" start="2025-09-25T13:48:09.831478" elapsed="0.000125"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:01.045064" level="INFO">${raw_name} = Krista Mayer</msg>
+<msg time="2025-09-25T13:48:09.842858" level="INFO">${raw_name} = K
+Kyra Marvin</msg>
 <var>${raw_name}</var>
 <arg>${name_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.032442" elapsed="0.012722"/>
+<status status="PASS" start="2025-09-25T13:48:09.831669" elapsed="0.011294"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.045477" level="INFO">${name} = Mayer</msg>
+<msg time="2025-09-25T13:48:09.843270" level="INFO">${name} = Kyra Marvin</msg>
 <var>${name}</var>
 <arg>" ".join("""${raw_name}""".split()[1:])</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.045295" elapsed="0.000227"/>
+<status status="PASS" start="2025-09-25T13:48:09.843091" elapsed="0.000225"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>\n====== User ${i} ======</arg>
+<arg>\n${name}:</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.045599" elapsed="0.000128"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Name: ${name}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.045799" elapsed="0.000138"/>
+<status status="PASS" start="2025-09-25T13:48:09.843389" elapsed="0.000117"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.046189" level="INFO">${spent_locator} = (//table//tbody//tr)[13]/td[5]</msg>
+<msg time="2025-09-25T13:48:09.843672" level="INFO">${spent_locator} = (//table//tbody//tr)[13]/td[5]</msg>
 <var>${spent_locator}</var>
 <arg>${current_row_locator}/td[5]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.046040" elapsed="0.000209"/>
+<status status="PASS" start="2025-09-25T13:48:09.843578" elapsed="0.000135"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:01.057473" level="INFO">${spent_text} = $573.94</msg>
+<msg time="2025-09-25T13:48:09.853848" level="INFO">${spent_text} = $0.00</msg>
 <var>${spent_text}</var>
 <arg>${spent_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.046346" elapsed="0.011331"/>
+<status status="PASS" start="2025-09-25T13:48:09.843780" elapsed="0.010169"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.058068" level="INFO">${spent_text} = 573.94</msg>
+<msg time="2025-09-25T13:48:09.854265" level="INFO">${spent_text} = 0.00</msg>
 <var>${spent_text}</var>
 <arg>"""${spent_text}""".replace("$","").replace(",","").strip()</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.057828" elapsed="0.000297"/>
+<status status="PASS" start="2025-09-25T13:48:09.854068" elapsed="0.000239"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.058354" level="INFO">${spent} = 573</msg>
+<msg time="2025-09-25T13:48:09.854499" level="INFO">${spent} = 0</msg>
 <var>${spent}</var>
 <arg>int(${spent_text}) if ${spent_text} else 0</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.058212" elapsed="0.000188"/>
+<status status="PASS" start="2025-09-25T13:48:09.854378" elapsed="0.000160"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Total spent: $${spent}</arg>
+<arg>$${spent}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.058476" elapsed="0.000168"/>
+<status status="PASS" start="2025-09-25T13:48:09.854606" elapsed="0.000101"/>
 </kw>
 <if>
 <branch type="IF" condition="${spent} &gt; 0">
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.059074" level="INFO">${user} = {'name': 'Mayer', 'spent': 573}</msg>
 <var>${user}</var>
 <arg>name=${name}</arg>
 <arg>spent=${spent}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.058899" elapsed="0.000227"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.854878" elapsed="0.000036"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${users_with_spent}</arg>
 <arg>${user}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.059205" elapsed="0.000096"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.854974" elapsed="0.000035"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.059487" level="INFO">${total_spent} = 1343</msg>
 <var>${total_spent}</var>
 <arg>${total_spent} + ${spent}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.059371" elapsed="0.000159"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.855069" elapsed="0.000031"/>
 </kw>
-<status status="PASS" start="2025-09-25T12:37:01.058724" elapsed="0.000854"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.854772" elapsed="0.000362"/>
 </branch>
-<status status="PASS" start="2025-09-25T12:37:01.058709" elapsed="0.000909"/>
+<status status="PASS" start="2025-09-25T13:48:09.854758" elapsed="0.000411"/>
 </if>
 <var name="${i}">13</var>
-<status status="PASS" start="2025-09-25T12:37:01.031696" elapsed="0.027936"/>
+<status status="PASS" start="2025-09-25T13:48:09.831193" elapsed="0.023988"/>
 </iter>
 <iter>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.059915" level="INFO">${current_row_locator} = (//table//tbody//tr)[14]</msg>
+<msg time="2025-09-25T13:48:09.855465" level="INFO">${current_row_locator} = (//table//tbody//tr)[14]</msg>
 <var>${current_row_locator}</var>
 <arg>(${table_row})[${i}]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.059816" elapsed="0.000143"/>
+<status status="PASS" start="2025-09-25T13:48:09.855364" elapsed="0.000146"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.060106" level="INFO">${name_locator} = (//table//tbody//tr)[14]/td[2]//a/div</msg>
+<msg time="2025-09-25T13:48:09.855987" level="INFO">${name_locator} = (//table//tbody//tr)[14]/td[2]//a/div</msg>
 <var>${name_locator}</var>
 <arg>${current_row_locator}/td[2]//a/div</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.060022" elapsed="0.000120"/>
+<status status="PASS" start="2025-09-25T13:48:09.855842" elapsed="0.000199"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:01.070955" level="INFO">${raw_name} = Zechariah Trantow</msg>
+<msg time="2025-09-25T13:48:09.900096" level="INFO">${raw_name} = B
+Bonita Greenholt</msg>
 <var>${raw_name}</var>
 <arg>${name_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.060205" elapsed="0.010850"/>
+<status status="PASS" start="2025-09-25T13:48:09.856160" elapsed="0.044076"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.071354" level="INFO">${name} = Trantow</msg>
+<msg time="2025-09-25T13:48:09.900594" level="INFO">${name} = Bonita Greenholt</msg>
 <var>${name}</var>
 <arg>" ".join("""${raw_name}""".split()[1:])</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.071174" elapsed="0.000228"/>
+<status status="PASS" start="2025-09-25T13:48:09.900392" elapsed="0.000253"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>\n====== User ${i} ======</arg>
+<arg>\n${name}:</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.071477" elapsed="0.000249"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Name: ${name}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.071802" elapsed="0.000393"/>
+<status status="PASS" start="2025-09-25T13:48:09.900726" elapsed="0.000864"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.072422" level="INFO">${spent_locator} = (//table//tbody//tr)[14]/td[5]</msg>
+<msg time="2025-09-25T13:48:09.901964" level="INFO">${spent_locator} = (//table//tbody//tr)[14]/td[5]</msg>
 <var>${spent_locator}</var>
 <arg>${current_row_locator}/td[5]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.072316" elapsed="0.000157"/>
+<status status="PASS" start="2025-09-25T13:48:09.901838" elapsed="0.000216"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:01.110069" level="INFO">${spent_text} = $212.95</msg>
+<msg time="2025-09-25T13:48:09.917837" level="INFO">${spent_text} = $0.00</msg>
 <var>${spent_text}</var>
 <arg>${spent_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.072548" elapsed="0.037632"/>
+<status status="PASS" start="2025-09-25T13:48:09.902144" elapsed="0.015800"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.110557" level="INFO">${spent_text} = 212.95</msg>
+<msg time="2025-09-25T13:48:09.918272" level="INFO">${spent_text} = 0.00</msg>
 <var>${spent_text}</var>
 <arg>"""${spent_text}""".replace("$","").replace(",","").strip()</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.110325" elapsed="0.000290"/>
+<status status="PASS" start="2025-09-25T13:48:09.918074" elapsed="0.000239"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.110838" level="INFO">${spent} = 212</msg>
+<msg time="2025-09-25T13:48:09.918518" level="INFO">${spent} = 0</msg>
 <var>${spent}</var>
 <arg>int(${spent_text}) if ${spent_text} else 0</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.110699" elapsed="0.000180"/>
+<status status="PASS" start="2025-09-25T13:48:09.918383" elapsed="0.000173"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Total spent: $${spent}</arg>
+<arg>$${spent}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.110953" elapsed="0.000115"/>
+<status status="PASS" start="2025-09-25T13:48:09.918621" elapsed="0.000106"/>
 </kw>
 <if>
 <branch type="IF" condition="${spent} &gt; 0">
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.111529" level="INFO">${user} = {'name': 'Trantow', 'spent': 212}</msg>
 <var>${user}</var>
 <arg>name=${name}</arg>
 <arg>spent=${spent}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.111370" elapsed="0.000210"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.918902" elapsed="0.000043"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${users_with_spent}</arg>
 <arg>${user}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.111654" elapsed="0.000096"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.919008" elapsed="0.000034"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.111958" level="INFO">${total_spent} = 1555</msg>
 <var>${total_spent}</var>
 <arg>${total_spent} + ${spent}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.111832" elapsed="0.000171"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.919099" elapsed="0.000031"/>
 </kw>
-<status status="PASS" start="2025-09-25T12:37:01.111138" elapsed="0.000906"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.918794" elapsed="0.000368"/>
 </branch>
-<status status="PASS" start="2025-09-25T12:37:01.111123" elapsed="0.000967"/>
+<status status="PASS" start="2025-09-25T13:48:09.918778" elapsed="0.000420"/>
 </if>
 <var name="${i}">14</var>
-<status status="PASS" start="2025-09-25T12:37:01.059748" elapsed="0.052357"/>
+<status status="PASS" start="2025-09-25T13:48:09.855299" elapsed="0.063912"/>
 </iter>
 <iter>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.112407" level="INFO">${current_row_locator} = (//table//tbody//tr)[15]</msg>
+<msg time="2025-09-25T13:48:09.919487" level="INFO">${current_row_locator} = (//table//tbody//tr)[15]</msg>
 <var>${current_row_locator}</var>
 <arg>(${table_row})[${i}]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.112299" elapsed="0.000151"/>
+<status status="PASS" start="2025-09-25T13:48:09.919383" elapsed="0.000154"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.112606" level="INFO">${name_locator} = (//table//tbody//tr)[15]/td[2]//a/div</msg>
+<msg time="2025-09-25T13:48:09.919691" level="INFO">${name_locator} = (//table//tbody//tr)[15]/td[2]//a/div</msg>
 <var>${name_locator}</var>
 <arg>${current_row_locator}/td[2]//a/div</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.112519" elapsed="0.000127"/>
+<status status="PASS" start="2025-09-25T13:48:09.919601" elapsed="0.000126"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:01.128222" level="INFO">${raw_name} = Bonnie Runolfsdottir</msg>
+<msg time="2025-09-25T13:48:09.930381" level="INFO">${raw_name} = Reba Fisher</msg>
 <var>${raw_name}</var>
 <arg>${name_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.112716" elapsed="0.015604"/>
+<status status="PASS" start="2025-09-25T13:48:09.919790" elapsed="0.010699"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.128774" level="INFO">${name} = Runolfsdottir</msg>
+<msg time="2025-09-25T13:48:09.930811" level="INFO">${name} = Fisher</msg>
 <var>${name}</var>
 <arg>" ".join("""${raw_name}""".split()[1:])</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.128562" elapsed="0.000265"/>
+<status status="PASS" start="2025-09-25T13:48:09.930624" elapsed="0.000233"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>\n====== User ${i} ======</arg>
+<arg>\n${name}:</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.128910" elapsed="0.000200"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Name: ${name}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.129401" elapsed="0.000138"/>
+<status status="PASS" start="2025-09-25T13:48:09.930932" elapsed="0.000119"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.129769" level="INFO">${spent_locator} = (//table//tbody//tr)[15]/td[5]</msg>
+<msg time="2025-09-25T13:48:09.931216" level="INFO">${spent_locator} = (//table//tbody//tr)[15]/td[5]</msg>
 <var>${spent_locator}</var>
 <arg>${current_row_locator}/td[5]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.129660" elapsed="0.000157"/>
+<status status="PASS" start="2025-09-25T13:48:09.931123" elapsed="0.000135"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:01.139529" level="INFO">${spent_text} = $0.00</msg>
+<msg time="2025-09-25T13:48:09.941935" level="INFO">${spent_text} = $262.40</msg>
 <var>${spent_text}</var>
 <arg>${spent_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.129891" elapsed="0.009767"/>
+<status status="PASS" start="2025-09-25T13:48:09.931332" elapsed="0.010703"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.140135" level="INFO">${spent_text} = 0.00</msg>
+<msg time="2025-09-25T13:48:09.942374" level="INFO">${spent_text} = 262.40</msg>
 <var>${spent_text}</var>
 <arg>"""${spent_text}""".replace("$","").replace(",","").strip()</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.139872" elapsed="0.000313"/>
+<status status="PASS" start="2025-09-25T13:48:09.942168" elapsed="0.000252"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.140459" level="INFO">${spent} = 0</msg>
+<msg time="2025-09-25T13:48:09.942612" level="INFO">${spent} = 262</msg>
 <var>${spent}</var>
 <arg>int(${spent_text}) if ${spent_text} else 0</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.140290" elapsed="0.000225"/>
+<status status="PASS" start="2025-09-25T13:48:09.942490" elapsed="0.000160"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Total spent: $${spent}</arg>
+<arg>$${spent}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.140635" elapsed="0.000150"/>
+<status status="PASS" start="2025-09-25T13:48:09.942714" elapsed="0.000106"/>
 </kw>
 <if>
 <branch type="IF" condition="${spent} &gt; 0">
 <kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-09-25T13:48:09.943240" level="INFO">${user} = {'name': 'Fisher', 'spent': 262}</msg>
 <var>${user}</var>
 <arg>name=${name}</arg>
 <arg>spent=${spent}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:01.140984" elapsed="0.000038"/>
+<status status="PASS" start="2025-09-25T13:48:09.942992" elapsed="0.000293"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${users_with_spent}</arg>
 <arg>${user}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:01.141086" elapsed="0.000033"/>
+<status status="PASS" start="2025-09-25T13:48:09.943354" elapsed="0.000085"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-09-25T13:48:09.943603" level="INFO">${total_spent} = 3587</msg>
 <var>${total_spent}</var>
 <arg>${total_spent} + ${spent}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:01.141177" elapsed="0.000032"/>
+<status status="PASS" start="2025-09-25T13:48:09.943502" elapsed="0.000139"/>
 </kw>
-<status status="NOT RUN" start="2025-09-25T12:37:01.140863" elapsed="0.000378"/>
+<status status="PASS" start="2025-09-25T13:48:09.942884" elapsed="0.000937"/>
 </branch>
-<status status="PASS" start="2025-09-25T12:37:01.140847" elapsed="0.000431"/>
+<status status="PASS" start="2025-09-25T13:48:09.942870" elapsed="0.001012"/>
 </if>
 <var name="${i}">15</var>
-<status status="PASS" start="2025-09-25T12:37:01.112231" elapsed="0.029060"/>
+<status status="PASS" start="2025-09-25T13:48:09.919319" elapsed="0.024578"/>
 </iter>
 <iter>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.141575" level="INFO">${current_row_locator} = (//table//tbody//tr)[16]</msg>
+<msg time="2025-09-25T13:48:09.944235" level="INFO">${current_row_locator} = (//table//tbody//tr)[16]</msg>
 <var>${current_row_locator}</var>
 <arg>(${table_row})[${i}]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.141472" elapsed="0.000148"/>
+<status status="PASS" start="2025-09-25T13:48:09.944108" elapsed="0.000185"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.141767" level="INFO">${name_locator} = (//table//tbody//tr)[16]/td[2]//a/div</msg>
+<msg time="2025-09-25T13:48:09.944472" level="INFO">${name_locator} = (//table//tbody//tr)[16]/td[2]//a/div</msg>
 <var>${name_locator}</var>
 <arg>${current_row_locator}/td[2]//a/div</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.141682" elapsed="0.000123"/>
+<status status="PASS" start="2025-09-25T13:48:09.944369" elapsed="0.000145"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:01.152800" level="INFO">${raw_name} = Katharina Kling</msg>
+<msg time="2025-09-25T13:48:09.956132" level="INFO">${raw_name} = Conner Heller</msg>
 <var>${raw_name}</var>
 <arg>${name_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.141879" elapsed="0.011019"/>
+<status status="PASS" start="2025-09-25T13:48:09.944589" elapsed="0.011658"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.153200" level="INFO">${name} = Kling</msg>
+<msg time="2025-09-25T13:48:09.956571" level="INFO">${name} = Heller</msg>
 <var>${name}</var>
 <arg>" ".join("""${raw_name}""".split()[1:])</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.153021" elapsed="0.000222"/>
+<status status="PASS" start="2025-09-25T13:48:09.956379" elapsed="0.000239"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>\n====== User ${i} ======</arg>
+<arg>\n${name}:</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.153313" elapsed="0.000125"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Name: ${name}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.153507" elapsed="0.000090"/>
+<status status="PASS" start="2025-09-25T13:48:09.956745" elapsed="0.000292"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.153752" level="INFO">${spent_locator} = (//table//tbody//tr)[16]/td[5]</msg>
+<msg time="2025-09-25T13:48:09.957306" level="INFO">${spent_locator} = (//table//tbody//tr)[16]/td[5]</msg>
 <var>${spent_locator}</var>
 <arg>${current_row_locator}/td[5]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.153665" elapsed="0.000135"/>
+<status status="PASS" start="2025-09-25T13:48:09.957156" elapsed="0.000225"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:01.163575" level="INFO">${spent_text} = $102.18</msg>
+<msg time="2025-09-25T13:48:09.967597" level="INFO">${spent_text} = $0.00</msg>
 <var>${spent_text}</var>
 <arg>${spent_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.153866" elapsed="0.009803"/>
+<status status="PASS" start="2025-09-25T13:48:09.957553" elapsed="0.010136"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.163982" level="INFO">${spent_text} = 102.18</msg>
+<msg time="2025-09-25T13:48:09.967995" level="INFO">${spent_text} = 0.00</msg>
 <var>${spent_text}</var>
 <arg>"""${spent_text}""".replace("$","").replace(",","").strip()</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.163792" elapsed="0.000233"/>
+<status status="PASS" start="2025-09-25T13:48:09.967804" elapsed="0.000232"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.164216" level="INFO">${spent} = 102</msg>
+<msg time="2025-09-25T13:48:09.968229" level="INFO">${spent} = 0</msg>
 <var>${spent}</var>
 <arg>int(${spent_text}) if ${spent_text} else 0</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.164094" elapsed="0.000247"/>
+<status status="PASS" start="2025-09-25T13:48:09.968107" elapsed="0.000159"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Total spent: $${spent}</arg>
+<arg>$${spent}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.164408" elapsed="0.000098"/>
+<status status="PASS" start="2025-09-25T13:48:09.968332" elapsed="0.000108"/>
 </kw>
 <if>
 <branch type="IF" condition="${spent} &gt; 0">
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.164812" level="INFO">${user} = {'name': 'Kling', 'spent': 102}</msg>
 <var>${user}</var>
 <arg>name=${name}</arg>
 <arg>spent=${spent}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.164676" elapsed="0.000177"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.968612" elapsed="0.000035"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${users_with_spent}</arg>
 <arg>${user}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.164918" elapsed="0.000088"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.968707" elapsed="0.000033"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.165176" level="INFO">${total_spent} = 1657</msg>
 <var>${total_spent}</var>
 <arg>${total_spent} + ${spent}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.165069" elapsed="0.000145"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.968798" elapsed="0.000031"/>
 </kw>
-<status status="PASS" start="2025-09-25T12:37:01.164570" elapsed="0.000717"/>
+<status status="NOT RUN" start="2025-09-25T13:48:09.968504" elapsed="0.000357"/>
 </branch>
-<status status="PASS" start="2025-09-25T12:37:01.164558" elapsed="0.000769"/>
+<status status="PASS" start="2025-09-25T13:48:09.968491" elapsed="0.000406"/>
 </if>
 <var name="${i}">16</var>
-<status status="PASS" start="2025-09-25T12:37:01.141408" elapsed="0.023932"/>
+<status status="PASS" start="2025-09-25T13:48:09.944022" elapsed="0.024888"/>
 </iter>
 <iter>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.165598" level="INFO">${current_row_locator} = (//table//tbody//tr)[17]</msg>
+<msg time="2025-09-25T13:48:09.969189" level="INFO">${current_row_locator} = (//table//tbody//tr)[17]</msg>
 <var>${current_row_locator}</var>
 <arg>(${table_row})[${i}]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.165507" elapsed="0.000129"/>
+<status status="PASS" start="2025-09-25T13:48:09.969086" elapsed="0.000146"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.165774" level="INFO">${name_locator} = (//table//tbody//tr)[17]/td[2]//a/div</msg>
+<msg time="2025-09-25T13:48:09.969383" level="INFO">${name_locator} = (//table//tbody//tr)[17]/td[2]//a/div</msg>
 <var>${name_locator}</var>
 <arg>${current_row_locator}/td[2]//a/div</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.165696" elapsed="0.000113"/>
+<status status="PASS" start="2025-09-25T13:48:09.969297" elapsed="0.000122"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:01.202717" level="INFO">${raw_name} = I
-Isadore Cormier</msg>
+<msg time="2025-09-25T13:48:10.008380" level="INFO">${raw_name} = A
+Alexandrea Price</msg>
 <var>${raw_name}</var>
 <arg>${name_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.165871" elapsed="0.036954"/>
+<status status="PASS" start="2025-09-25T13:48:09.969482" elapsed="0.039022"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.203693" level="INFO">${name} = Isadore Cormier</msg>
+<msg time="2025-09-25T13:48:10.008852" level="INFO">${name} = Alexandrea Price</msg>
 <var>${name}</var>
 <arg>" ".join("""${raw_name}""".split()[1:])</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.202952" elapsed="0.000830"/>
+<status status="PASS" start="2025-09-25T13:48:10.008649" elapsed="0.000254"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>\n====== User ${i} ======</arg>
+<arg>\n${name}:</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.203893" elapsed="0.000166"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Name: ${name}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.204137" elapsed="0.000097"/>
+<status status="PASS" start="2025-09-25T13:48:10.008979" elapsed="0.000199"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.204406" level="INFO">${spent_locator} = (//table//tbody//tr)[17]/td[5]</msg>
+<msg time="2025-09-25T13:48:10.009428" level="INFO">${spent_locator} = (//table//tbody//tr)[17]/td[5]</msg>
 <var>${spent_locator}</var>
 <arg>${current_row_locator}/td[5]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.204309" elapsed="0.000144"/>
+<status status="PASS" start="2025-09-25T13:48:10.009290" elapsed="0.000206"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:01.221109" level="INFO">${spent_text} = $0.00</msg>
+<msg time="2025-09-25T13:48:10.025943" level="INFO">${spent_text} = $0.00</msg>
 <var>${spent_text}</var>
 <arg>${spent_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.204529" elapsed="0.016694"/>
+<status status="PASS" start="2025-09-25T13:48:10.009592" elapsed="0.016445"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.221535" level="INFO">${spent_text} = 0.00</msg>
+<msg time="2025-09-25T13:48:10.026342" level="INFO">${spent_text} = 0.00</msg>
 <var>${spent_text}</var>
 <arg>"""${spent_text}""".replace("$","").replace(",","").strip()</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.221343" elapsed="0.000231"/>
+<status status="PASS" start="2025-09-25T13:48:10.026154" elapsed="0.000229"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.221763" level="INFO">${spent} = 0</msg>
+<msg time="2025-09-25T13:48:10.026586" level="INFO">${spent} = 0</msg>
 <var>${spent}</var>
 <arg>int(${spent_text}) if ${spent_text} else 0</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.221644" elapsed="0.000158"/>
+<status status="PASS" start="2025-09-25T13:48:10.026451" elapsed="0.000171"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Total spent: $${spent}</arg>
+<arg>$${spent}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.221967" elapsed="0.000136"/>
+<status status="PASS" start="2025-09-25T13:48:10.026686" elapsed="0.000106"/>
 </kw>
 <if>
 <branch type="IF" condition="${spent} &gt; 0">
@@ -1840,709 +1762,673 @@ Isadore Cormier</msg>
 <arg>name=${name}</arg>
 <arg>spent=${spent}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:01.222300" elapsed="0.000039"/>
+<status status="NOT RUN" start="2025-09-25T13:48:10.027028" elapsed="0.000040"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${users_with_spent}</arg>
 <arg>${user}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:01.222406" elapsed="0.000035"/>
+<status status="NOT RUN" start="2025-09-25T13:48:10.027135" elapsed="0.000037"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
 <var>${total_spent}</var>
 <arg>${total_spent} + ${spent}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:01.222503" elapsed="0.000034"/>
+<status status="NOT RUN" start="2025-09-25T13:48:10.027284" elapsed="0.000060"/>
 </kw>
-<status status="NOT RUN" start="2025-09-25T12:37:01.222179" elapsed="0.000393"/>
+<status status="NOT RUN" start="2025-09-25T13:48:10.026913" elapsed="0.000509"/>
 </branch>
-<status status="PASS" start="2025-09-25T12:37:01.222162" elapsed="0.000447"/>
+<status status="PASS" start="2025-09-25T13:48:10.026898" elapsed="0.000579"/>
 </if>
 <var name="${i}">17</var>
-<status status="PASS" start="2025-09-25T12:37:01.165445" elapsed="0.057178"/>
+<status status="PASS" start="2025-09-25T13:48:09.969019" elapsed="0.058473"/>
 </iter>
 <iter>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.222943" level="INFO">${current_row_locator} = (//table//tbody//tr)[18]</msg>
+<msg time="2025-09-25T13:48:10.027821" level="INFO">${current_row_locator} = (//table//tbody//tr)[18]</msg>
 <var>${current_row_locator}</var>
 <arg>(${table_row})[${i}]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.222816" elapsed="0.000268"/>
+<status status="PASS" start="2025-09-25T13:48:10.027700" elapsed="0.000179"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.223287" level="INFO">${name_locator} = (//table//tbody//tr)[18]/td[2]//a/div</msg>
+<msg time="2025-09-25T13:48:10.028050" level="INFO">${name_locator} = (//table//tbody//tr)[18]/td[2]//a/div</msg>
 <var>${name_locator}</var>
 <arg>${current_row_locator}/td[2]//a/div</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.223188" elapsed="0.000142"/>
+<status status="PASS" start="2025-09-25T13:48:10.027951" elapsed="0.000139"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:01.233421" level="INFO">${raw_name} = K
-Kian Quitzon</msg>
+<msg time="2025-09-25T13:48:10.038625" level="INFO">${raw_name} = Edyth Heller</msg>
 <var>${raw_name}</var>
 <arg>${name_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.223402" elapsed="0.010124"/>
+<status status="PASS" start="2025-09-25T13:48:10.028157" elapsed="0.010564"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.233824" level="INFO">${name} = Kian Quitzon</msg>
+<msg time="2025-09-25T13:48:10.039133" level="INFO">${name} = Heller</msg>
 <var>${name}</var>
 <arg>" ".join("""${raw_name}""".split()[1:])</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.233649" elapsed="0.000218"/>
+<status status="PASS" start="2025-09-25T13:48:10.038837" elapsed="0.000349"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>\n====== User ${i} ======</arg>
+<arg>\n${name}:</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.233939" elapsed="0.000132"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Name: ${name}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.234141" elapsed="0.000090"/>
+<status status="PASS" start="2025-09-25T13:48:10.039271" elapsed="0.000135"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.234388" level="INFO">${spent_locator} = (//table//tbody//tr)[18]/td[5]</msg>
+<msg time="2025-09-25T13:48:10.039577" level="INFO">${spent_locator} = (//table//tbody//tr)[18]/td[5]</msg>
 <var>${spent_locator}</var>
 <arg>${current_row_locator}/td[5]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.234300" elapsed="0.000127"/>
+<status status="PASS" start="2025-09-25T13:48:10.039482" elapsed="0.000139"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:01.245092" level="INFO">${spent_text} = $0.00</msg>
+<msg time="2025-09-25T13:48:10.049675" level="INFO">${spent_text} = $1,322.94</msg>
 <var>${spent_text}</var>
 <arg>${spent_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.234497" elapsed="0.010704"/>
+<status status="PASS" start="2025-09-25T13:48:10.039693" elapsed="0.010077"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.245512" level="INFO">${spent_text} = 0.00</msg>
+<msg time="2025-09-25T13:48:10.050072" level="INFO">${spent_text} = 1322.94</msg>
 <var>${spent_text}</var>
 <arg>"""${spent_text}""".replace("$","").replace(",","").strip()</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.245323" elapsed="0.000230"/>
+<status status="PASS" start="2025-09-25T13:48:10.049887" elapsed="0.000229"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.245749" level="INFO">${spent} = 0</msg>
+<msg time="2025-09-25T13:48:10.050307" level="INFO">${spent} = 1322</msg>
 <var>${spent}</var>
 <arg>int(${spent_text}) if ${spent_text} else 0</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.245623" elapsed="0.000163"/>
+<status status="PASS" start="2025-09-25T13:48:10.050186" elapsed="0.000160"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Total spent: $${spent}</arg>
+<arg>$${spent}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.245977" elapsed="0.000155"/>
+<status status="PASS" start="2025-09-25T13:48:10.050409" elapsed="0.000102"/>
 </kw>
 <if>
 <branch type="IF" condition="${spent} &gt; 0">
 <kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-09-25T13:48:10.050935" level="INFO">${user} = {'name': 'Heller', 'spent': 1322}</msg>
 <var>${user}</var>
 <arg>name=${name}</arg>
 <arg>spent=${spent}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:01.246400" elapsed="0.000047"/>
+<status status="PASS" start="2025-09-25T13:48:10.050685" elapsed="0.000291"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${users_with_spent}</arg>
 <arg>${user}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:01.246653" elapsed="0.000081"/>
+<status status="PASS" start="2025-09-25T13:48:10.051041" elapsed="0.000086"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-09-25T13:48:10.051304" level="INFO">${total_spent} = 4909</msg>
 <var>${total_spent}</var>
 <arg>${total_spent} + ${spent}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:01.246881" elapsed="0.000040"/>
+<status status="PASS" start="2025-09-25T13:48:10.051191" elapsed="0.000151"/>
 </kw>
-<status status="NOT RUN" start="2025-09-25T12:37:01.246246" elapsed="0.000714"/>
+<status status="PASS" start="2025-09-25T13:48:10.050578" elapsed="0.000801"/>
 </branch>
-<status status="PASS" start="2025-09-25T12:37:01.246228" elapsed="0.000775"/>
+<status status="PASS" start="2025-09-25T13:48:10.050563" elapsed="0.000852"/>
 </if>
 <var name="${i}">18</var>
-<status status="PASS" start="2025-09-25T12:37:01.222747" elapsed="0.024272"/>
+<status status="PASS" start="2025-09-25T13:48:10.027617" elapsed="0.023810"/>
 </iter>
 <iter>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.247313" level="INFO">${current_row_locator} = (//table//tbody//tr)[19]</msg>
+<msg time="2025-09-25T13:48:10.051694" level="INFO">${current_row_locator} = (//table//tbody//tr)[19]</msg>
 <var>${current_row_locator}</var>
 <arg>(${table_row})[${i}]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.247209" elapsed="0.000150"/>
+<status status="PASS" start="2025-09-25T13:48:10.051593" elapsed="0.000141"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.247504" level="INFO">${name_locator} = (//table//tbody//tr)[19]/td[2]//a/div</msg>
+<msg time="2025-09-25T13:48:10.051876" level="INFO">${name_locator} = (//table//tbody//tr)[19]/td[2]//a/div</msg>
 <var>${name_locator}</var>
 <arg>${current_row_locator}/td[2]//a/div</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.247421" elapsed="0.000120"/>
+<status status="PASS" start="2025-09-25T13:48:10.051797" elapsed="0.000133"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:01.259124" level="INFO">${raw_name} = Issac Beatty</msg>
+<msg time="2025-09-25T13:48:10.062943" level="INFO">${raw_name} = O
+Orpha Prosacco</msg>
 <var>${raw_name}</var>
 <arg>${name_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.247605" elapsed="0.011617"/>
+<status status="PASS" start="2025-09-25T13:48:10.051996" elapsed="0.011048"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.259518" level="INFO">${name} = Beatty</msg>
+<msg time="2025-09-25T13:48:10.063351" level="INFO">${name} = Orpha Prosacco</msg>
 <var>${name}</var>
 <arg>" ".join("""${raw_name}""".split()[1:])</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.259344" elapsed="0.000217"/>
+<status status="PASS" start="2025-09-25T13:48:10.063177" elapsed="0.000218"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>\n====== User ${i} ======</arg>
+<arg>\n${name}:</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.259632" elapsed="0.000126"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Name: ${name}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.259830" elapsed="0.000093"/>
+<status status="PASS" start="2025-09-25T13:48:10.063465" elapsed="0.000111"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.260078" level="INFO">${spent_locator} = (//table//tbody//tr)[19]/td[5]</msg>
+<msg time="2025-09-25T13:48:10.063742" level="INFO">${spent_locator} = (//table//tbody//tr)[19]/td[5]</msg>
 <var>${spent_locator}</var>
 <arg>${current_row_locator}/td[5]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.259991" elapsed="0.000128"/>
+<status status="PASS" start="2025-09-25T13:48:10.063647" elapsed="0.000136"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:01.269617" level="INFO">${spent_text} = $1,124.64</msg>
+<msg time="2025-09-25T13:48:10.100213" level="INFO">${spent_text} = $0.00</msg>
 <var>${spent_text}</var>
 <arg>${spent_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.260188" elapsed="0.009521"/>
+<status status="PASS" start="2025-09-25T13:48:10.063854" elapsed="0.036483"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.269997" level="INFO">${spent_text} = 1124.64</msg>
+<msg time="2025-09-25T13:48:10.100750" level="INFO">${spent_text} = 0.00</msg>
 <var>${spent_text}</var>
 <arg>"""${spent_text}""".replace("$","").replace(",","").strip()</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.269821" elapsed="0.000217"/>
+<status status="PASS" start="2025-09-25T13:48:10.100506" elapsed="0.000365"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.270223" level="INFO">${spent} = 1124</msg>
+<msg time="2025-09-25T13:48:10.102029" level="INFO">${spent} = 0</msg>
 <var>${spent}</var>
 <arg>int(${spent_text}) if ${spent_text} else 0</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.270106" elapsed="0.000155"/>
+<status status="PASS" start="2025-09-25T13:48:10.100969" elapsed="0.001162"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Total spent: $${spent}</arg>
+<arg>$${spent}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.270324" elapsed="0.000098"/>
+<status status="PASS" start="2025-09-25T13:48:10.102263" elapsed="0.000166"/>
 </kw>
 <if>
 <branch type="IF" condition="${spent} &gt; 0">
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.270722" level="INFO">${user} = {'name': 'Beatty', 'spent': 1124}</msg>
 <var>${user}</var>
 <arg>name=${name}</arg>
 <arg>spent=${spent}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.270590" elapsed="0.000170"/>
+<status status="NOT RUN" start="2025-09-25T13:48:10.102658" elapsed="0.000042"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${users_with_spent}</arg>
 <arg>${user}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.270823" elapsed="0.000083"/>
+<status status="NOT RUN" start="2025-09-25T13:48:10.102773" elapsed="0.000042"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.271077" level="INFO">${total_spent} = 2781</msg>
 <var>${total_spent}</var>
 <arg>${total_spent} + ${spent}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.270968" elapsed="0.000147"/>
+<status status="NOT RUN" start="2025-09-25T13:48:10.102881" elapsed="0.000035"/>
 </kw>
-<status status="PASS" start="2025-09-25T12:37:01.270485" elapsed="0.000667"/>
+<status status="NOT RUN" start="2025-09-25T13:48:10.102512" elapsed="0.000440"/>
 </branch>
-<status status="PASS" start="2025-09-25T12:37:01.270472" elapsed="0.000717"/>
+<status status="PASS" start="2025-09-25T13:48:10.102494" elapsed="0.000499"/>
 </if>
 <var name="${i}">19</var>
-<status status="PASS" start="2025-09-25T12:37:01.247142" elapsed="0.024060"/>
+<status status="PASS" start="2025-09-25T13:48:10.051530" elapsed="0.051478"/>
 </iter>
 <iter>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.271464" level="INFO">${current_row_locator} = (//table//tbody//tr)[20]</msg>
+<msg time="2025-09-25T13:48:10.103323" level="INFO">${current_row_locator} = (//table//tbody//tr)[20]</msg>
 <var>${current_row_locator}</var>
 <arg>(${table_row})[${i}]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.271371" elapsed="0.000137"/>
+<status status="PASS" start="2025-09-25T13:48:10.103206" elapsed="0.000172"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.271738" level="INFO">${name_locator} = (//table//tbody//tr)[20]/td[2]//a/div</msg>
+<msg time="2025-09-25T13:48:10.103823" level="INFO">${name_locator} = (//table//tbody//tr)[20]/td[2]//a/div</msg>
 <var>${name_locator}</var>
 <arg>${current_row_locator}/td[2]//a/div</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.271598" elapsed="0.000193"/>
+<status status="PASS" start="2025-09-25T13:48:10.103701" elapsed="0.000175"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:01.308789" level="INFO">${raw_name} = A
-Alex Kiehn</msg>
+<msg time="2025-09-25T13:48:10.118819" level="INFO">${raw_name} = Lawrence Legros</msg>
 <var>${raw_name}</var>
 <arg>${name_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.271937" elapsed="0.037843"/>
+<status status="PASS" start="2025-09-25T13:48:10.103992" elapsed="0.014924"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.310665" level="INFO">${name} = Alex Kiehn</msg>
+<msg time="2025-09-25T13:48:10.119203" level="INFO">${name} = Legros</msg>
 <var>${name}</var>
 <arg>" ".join("""${raw_name}""".split()[1:])</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.310071" elapsed="0.000831"/>
+<status status="PASS" start="2025-09-25T13:48:10.119032" elapsed="0.000214"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>\n====== User ${i} ======</arg>
+<arg>\n${name}:</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.311236" elapsed="0.000440"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Name: ${name}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.311921" elapsed="0.000652"/>
+<status status="PASS" start="2025-09-25T13:48:10.119316" elapsed="0.000112"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.313260" level="INFO">${spent_locator} = (//table//tbody//tr)[20]/td[5]</msg>
+<msg time="2025-09-25T13:48:10.119592" level="INFO">${spent_locator} = (//table//tbody//tr)[20]/td[5]</msg>
 <var>${spent_locator}</var>
 <arg>${current_row_locator}/td[5]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.312946" elapsed="0.000481"/>
+<status status="PASS" start="2025-09-25T13:48:10.119499" elapsed="0.000132"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:01.325487" level="INFO">${spent_text} = $0.00</msg>
+<msg time="2025-09-25T13:48:10.129812" level="INFO">${spent_text} = $265.72</msg>
 <var>${spent_text}</var>
 <arg>${spent_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.313804" elapsed="0.011777"/>
+<status status="PASS" start="2025-09-25T13:48:10.119698" elapsed="0.010221"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.325906" level="INFO">${spent_text} = 0.00</msg>
+<msg time="2025-09-25T13:48:10.130231" level="INFO">${spent_text} = 265.72</msg>
 <var>${spent_text}</var>
 <arg>"""${spent_text}""".replace("$","").replace(",","").strip()</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.325710" elapsed="0.000238"/>
+<status status="PASS" start="2025-09-25T13:48:10.130043" elapsed="0.000232"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.326143" level="INFO">${spent} = 0</msg>
+<msg time="2025-09-25T13:48:10.130465" level="INFO">${spent} = 265</msg>
 <var>${spent}</var>
 <arg>int(${spent_text}) if ${spent_text} else 0</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.326020" elapsed="0.000159"/>
+<status status="PASS" start="2025-09-25T13:48:10.130346" elapsed="0.000158"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Total spent: $${spent}</arg>
+<arg>$${spent}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.326246" elapsed="0.000108"/>
+<status status="PASS" start="2025-09-25T13:48:10.130571" elapsed="0.000106"/>
 </kw>
 <if>
 <branch type="IF" condition="${spent} &gt; 0">
 <kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-09-25T13:48:10.130997" level="INFO">${user} = {'name': 'Legros', 'spent': 265}</msg>
 <var>${user}</var>
 <arg>name=${name}</arg>
 <arg>spent=${spent}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:01.326524" elapsed="0.000037"/>
+<status status="PASS" start="2025-09-25T13:48:10.130851" elapsed="0.000190"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${users_with_spent}</arg>
 <arg>${user}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:01.326624" elapsed="0.000034"/>
+<status status="PASS" start="2025-09-25T13:48:10.131112" elapsed="0.000086"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-09-25T13:48:10.131364" level="INFO">${total_spent} = 5174</msg>
 <var>${total_spent}</var>
 <arg>${total_spent} + ${spent}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:01.326716" elapsed="0.000032"/>
+<status status="PASS" start="2025-09-25T13:48:10.131262" elapsed="0.000140"/>
 </kw>
-<status status="NOT RUN" start="2025-09-25T12:37:01.326419" elapsed="0.000363"/>
+<status status="PASS" start="2025-09-25T13:48:10.130742" elapsed="0.000697"/>
 </branch>
-<status status="PASS" start="2025-09-25T12:37:01.326406" elapsed="0.000411"/>
+<status status="PASS" start="2025-09-25T13:48:10.130728" elapsed="0.000749"/>
 </if>
 <var name="${i}">20</var>
-<status status="PASS" start="2025-09-25T12:37:01.271309" elapsed="0.055521"/>
+<status status="PASS" start="2025-09-25T13:48:10.103135" elapsed="0.028354"/>
 </iter>
 <iter>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.327095" level="INFO">${current_row_locator} = (//table//tbody//tr)[21]</msg>
+<msg time="2025-09-25T13:48:10.131754" level="INFO">${current_row_locator} = (//table//tbody//tr)[21]</msg>
 <var>${current_row_locator}</var>
 <arg>(${table_row})[${i}]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.326999" elapsed="0.000136"/>
+<status status="PASS" start="2025-09-25T13:48:10.131658" elapsed="0.000134"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.327278" level="INFO">${name_locator} = (//table//tbody//tr)[21]/td[2]//a/div</msg>
+<msg time="2025-09-25T13:48:10.131933" level="INFO">${name_locator} = (//table//tbody//tr)[21]/td[2]//a/div</msg>
 <var>${name_locator}</var>
 <arg>${current_row_locator}/td[2]//a/div</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.327198" elapsed="0.000116"/>
+<status status="PASS" start="2025-09-25T13:48:10.131852" elapsed="0.000117"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:01.337988" level="INFO">${raw_name} = Anibal Kohler</msg>
+<msg time="2025-09-25T13:48:10.143000" level="INFO">${raw_name} = J
+Justen Kiehn</msg>
 <var>${raw_name}</var>
 <arg>${name_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.327378" elapsed="0.010709"/>
+<status status="PASS" start="2025-09-25T13:48:10.132034" elapsed="0.011079"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.338379" level="INFO">${name} = Kohler</msg>
+<msg time="2025-09-25T13:48:10.143440" level="INFO">${name} = Justen Kiehn</msg>
 <var>${name}</var>
 <arg>" ".join("""${raw_name}""".split()[1:])</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.338209" elapsed="0.000213"/>
+<status status="PASS" start="2025-09-25T13:48:10.143250" elapsed="0.000234"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>\n====== User ${i} ======</arg>
+<arg>\n${name}:</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.338525" elapsed="0.000137"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Name: ${name}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.338735" elapsed="0.000089"/>
+<status status="PASS" start="2025-09-25T13:48:10.143557" elapsed="0.000118"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.338982" level="INFO">${spent_locator} = (//table//tbody//tr)[21]/td[5]</msg>
+<msg time="2025-09-25T13:48:10.143962" level="INFO">${spent_locator} = (//table//tbody//tr)[21]/td[5]</msg>
 <var>${spent_locator}</var>
 <arg>${current_row_locator}/td[5]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.338894" elapsed="0.000130"/>
+<status status="PASS" start="2025-09-25T13:48:10.143749" elapsed="0.000268"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:01.350069" level="INFO">${spent_text} = $221.04</msg>
+<msg time="2025-09-25T13:48:10.153928" level="INFO">${spent_text} = $0.00</msg>
 <var>${spent_text}</var>
 <arg>${spent_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.339093" elapsed="0.011073"/>
+<status status="PASS" start="2025-09-25T13:48:10.144106" elapsed="0.009917"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.350479" level="INFO">${spent_text} = 221.04</msg>
+<msg time="2025-09-25T13:48:10.154334" level="INFO">${spent_text} = 0.00</msg>
 <var>${spent_text}</var>
 <arg>"""${spent_text}""".replace("$","").replace(",","").strip()</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.350286" elapsed="0.000238"/>
+<status status="PASS" start="2025-09-25T13:48:10.154144" elapsed="0.000230"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.350721" level="INFO">${spent} = 221</msg>
+<msg time="2025-09-25T13:48:10.154572" level="INFO">${spent} = 0</msg>
 <var>${spent}</var>
 <arg>int(${spent_text}) if ${spent_text} else 0</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.350595" elapsed="0.000246"/>
+<status status="PASS" start="2025-09-25T13:48:10.154446" elapsed="0.000164"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Total spent: $${spent}</arg>
+<arg>$${spent}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.350909" elapsed="0.000099"/>
+<status status="PASS" start="2025-09-25T13:48:10.154676" elapsed="0.000102"/>
 </kw>
 <if>
 <branch type="IF" condition="${spent} &gt; 0">
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.351322" level="INFO">${user} = {'name': 'Kohler', 'spent': 221}</msg>
 <var>${user}</var>
 <arg>name=${name}</arg>
 <arg>spent=${spent}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.351180" elapsed="0.000188"/>
+<status status="NOT RUN" start="2025-09-25T13:48:10.154946" elapsed="0.000130"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${users_with_spent}</arg>
 <arg>${user}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.351441" elapsed="0.000098"/>
+<status status="NOT RUN" start="2025-09-25T13:48:10.155147" elapsed="0.000034"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.351721" level="INFO">${total_spent} = 3002</msg>
 <var>${total_spent}</var>
 <arg>${total_spent} + ${spent}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.351607" elapsed="0.000155"/>
+<status status="NOT RUN" start="2025-09-25T13:48:10.155242" elapsed="0.000032"/>
 </kw>
-<status status="PASS" start="2025-09-25T12:37:01.351074" elapsed="0.000728"/>
+<status status="NOT RUN" start="2025-09-25T13:48:10.154842" elapsed="0.000465"/>
 </branch>
-<status status="PASS" start="2025-09-25T12:37:01.351061" elapsed="0.000783"/>
+<status status="PASS" start="2025-09-25T13:48:10.154829" elapsed="0.000513"/>
 </if>
 <var name="${i}">21</var>
-<status status="PASS" start="2025-09-25T12:37:01.326936" elapsed="0.024923"/>
+<status status="PASS" start="2025-09-25T13:48:10.131595" elapsed="0.023759"/>
 </iter>
 <iter>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.352157" level="INFO">${current_row_locator} = (//table//tbody//tr)[22]</msg>
+<msg time="2025-09-25T13:48:10.155691" level="INFO">${current_row_locator} = (//table//tbody//tr)[22]</msg>
 <var>${current_row_locator}</var>
 <arg>(${table_row})[${i}]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.352059" elapsed="0.000141"/>
+<status status="PASS" start="2025-09-25T13:48:10.155532" elapsed="0.000209"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.352352" level="INFO">${name_locator} = (//table//tbody//tr)[22]/td[2]//a/div</msg>
+<msg time="2025-09-25T13:48:10.155910" level="INFO">${name_locator} = (//table//tbody//tr)[22]/td[2]//a/div</msg>
 <var>${name_locator}</var>
 <arg>${current_row_locator}/td[2]//a/div</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.352266" elapsed="0.000124"/>
+<status status="PASS" start="2025-09-25T13:48:10.155815" elapsed="0.000136"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:01.363906" level="INFO">${raw_name} = Anya Veum</msg>
+<msg time="2025-09-25T13:48:10.194427" level="INFO">${raw_name} = M
+Maeve Lemke</msg>
 <var>${raw_name}</var>
 <arg>${name_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.352458" elapsed="0.011544"/>
+<status status="PASS" start="2025-09-25T13:48:10.156021" elapsed="0.038511"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.364295" level="INFO">${name} = Veum</msg>
+<msg time="2025-09-25T13:48:10.196379" level="INFO">${name} = Maeve Lemke</msg>
 <var>${name}</var>
 <arg>" ".join("""${raw_name}""".split()[1:])</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.364124" elapsed="0.000214"/>
+<status status="PASS" start="2025-09-25T13:48:10.195632" elapsed="0.001252"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>\n====== User ${i} ======</arg>
+<arg>\n${name}:</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.364409" elapsed="0.000130"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Name: ${name}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.364611" elapsed="0.000089"/>
+<status status="PASS" start="2025-09-25T13:48:10.197219" elapsed="0.000457"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.364856" level="INFO">${spent_locator} = (//table//tbody//tr)[22]/td[5]</msg>
+<msg time="2025-09-25T13:48:10.199490" level="INFO">${spent_locator} = (//table//tbody//tr)[22]/td[5]</msg>
 <var>${spent_locator}</var>
 <arg>${current_row_locator}/td[5]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.364768" elapsed="0.000128"/>
+<status status="PASS" start="2025-09-25T13:48:10.197934" elapsed="0.001759"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:01.399221" level="INFO">${spent_text} = $920.55</msg>
+<msg time="2025-09-25T13:48:10.211283" level="INFO">${spent_text} = $0.00</msg>
 <var>${spent_text}</var>
 <arg>${spent_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.364962" elapsed="0.034378"/>
+<status status="PASS" start="2025-09-25T13:48:10.199996" elapsed="0.011383"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.399713" level="INFO">${spent_text} = 920.55</msg>
+<msg time="2025-09-25T13:48:10.211688" level="INFO">${spent_text} = 0.00</msg>
 <var>${spent_text}</var>
 <arg>"""${spent_text}""".replace("$","").replace(",","").strip()</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.399485" elapsed="0.000279"/>
+<status status="PASS" start="2025-09-25T13:48:10.211497" elapsed="0.000232"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.399990" level="INFO">${spent} = 920</msg>
+<msg time="2025-09-25T13:48:10.211918" level="INFO">${spent} = 0</msg>
 <var>${spent}</var>
 <arg>int(${spent_text}) if ${spent_text} else 0</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.399847" elapsed="0.000188"/>
+<status status="PASS" start="2025-09-25T13:48:10.211799" elapsed="0.000156"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Total spent: $${spent}</arg>
+<arg>$${spent}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.400108" elapsed="0.000116"/>
+<status status="PASS" start="2025-09-25T13:48:10.212023" elapsed="0.000108"/>
 </kw>
 <if>
 <branch type="IF" condition="${spent} &gt; 0">
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.400556" level="INFO">${user} = {'name': 'Veum', 'spent': 920}</msg>
 <var>${user}</var>
 <arg>name=${name}</arg>
 <arg>spent=${spent}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.400410" elapsed="0.000193"/>
+<status status="NOT RUN" start="2025-09-25T13:48:10.212361" elapsed="0.000048"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${users_with_spent}</arg>
 <arg>${user}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.400677" elapsed="0.000093"/>
+<status status="NOT RUN" start="2025-09-25T13:48:10.212482" elapsed="0.000036"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.400951" level="INFO">${total_spent} = 3922</msg>
 <var>${total_spent}</var>
 <arg>${total_spent} + ${spent}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.400840" elapsed="0.000154"/>
+<status status="NOT RUN" start="2025-09-25T13:48:10.212584" elapsed="0.000036"/>
 </kw>
-<status status="PASS" start="2025-09-25T12:37:01.400293" elapsed="0.000742"/>
+<status status="NOT RUN" start="2025-09-25T13:48:10.212199" elapsed="0.000456"/>
 </branch>
-<status status="PASS" start="2025-09-25T12:37:01.400277" elapsed="0.000804"/>
+<status status="PASS" start="2025-09-25T13:48:10.212183" elapsed="0.000509"/>
 </if>
 <var name="${i}">22</var>
-<status status="PASS" start="2025-09-25T12:37:01.351987" elapsed="0.049109"/>
+<status status="PASS" start="2025-09-25T13:48:10.155461" elapsed="0.057244"/>
 </iter>
 <iter>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.401401" level="INFO">${current_row_locator} = (//table//tbody//tr)[23]</msg>
+<msg time="2025-09-25T13:48:10.212997" level="INFO">${current_row_locator} = (//table//tbody//tr)[23]</msg>
 <var>${current_row_locator}</var>
 <arg>(${table_row})[${i}]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.401298" elapsed="0.000146"/>
+<status status="PASS" start="2025-09-25T13:48:10.212887" elapsed="0.000155"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.401596" level="INFO">${name_locator} = (//table//tbody//tr)[23]/td[2]//a/div</msg>
+<msg time="2025-09-25T13:48:10.213191" level="INFO">${name_locator} = (//table//tbody//tr)[23]/td[2]//a/div</msg>
 <var>${name_locator}</var>
 <arg>${current_row_locator}/td[2]//a/div</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.401509" elapsed="0.000142"/>
+<status status="PASS" start="2025-09-25T13:48:10.213105" elapsed="0.000127"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:01.415016" level="INFO">${raw_name} = Krystel Trantow</msg>
+<msg time="2025-09-25T13:48:10.224249" level="INFO">${raw_name} = Roman Ratke</msg>
 <var>${raw_name}</var>
 <arg>${name_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.401725" elapsed="0.013385"/>
+<status status="PASS" start="2025-09-25T13:48:10.213300" elapsed="0.011055"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.415403" level="INFO">${name} = Trantow</msg>
+<msg time="2025-09-25T13:48:10.224791" level="INFO">${name} = Ratke</msg>
 <var>${name}</var>
 <arg>" ".join("""${raw_name}""".split()[1:])</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.415232" elapsed="0.000211"/>
+<status status="PASS" start="2025-09-25T13:48:10.224583" elapsed="0.000263"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>\n====== User ${i} ======</arg>
+<arg>\n${name}:</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.415516" elapsed="0.000119"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Name: ${name}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.415707" elapsed="0.000091"/>
+<status status="PASS" start="2025-09-25T13:48:10.224930" elapsed="0.000167"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.415955" level="INFO">${spent_locator} = (//table//tbody//tr)[23]/td[5]</msg>
+<msg time="2025-09-25T13:48:10.225314" level="INFO">${spent_locator} = (//table//tbody//tr)[23]/td[5]</msg>
 <var>${spent_locator}</var>
 <arg>${current_row_locator}/td[5]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.415868" elapsed="0.000126"/>
+<status status="PASS" start="2025-09-25T13:48:10.225209" elapsed="0.000152"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:01.426364" level="INFO">${spent_text} = $811.76</msg>
+<msg time="2025-09-25T13:48:10.234920" level="INFO">${spent_text} = $642.25</msg>
 <var>${spent_text}</var>
 <arg>${spent_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.416059" elapsed="0.010402"/>
+<status status="PASS" start="2025-09-25T13:48:10.225437" elapsed="0.009581"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.426778" level="INFO">${spent_text} = 811.76</msg>
+<msg time="2025-09-25T13:48:10.235350" level="INFO">${spent_text} = 642.25</msg>
 <var>${spent_text}</var>
 <arg>"""${spent_text}""".replace("$","").replace(",","").strip()</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.426583" elapsed="0.000238"/>
+<status status="PASS" start="2025-09-25T13:48:10.235150" elapsed="0.000243"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.427015" level="INFO">${spent} = 811</msg>
+<msg time="2025-09-25T13:48:10.235592" level="INFO">${spent} = 642</msg>
 <var>${spent}</var>
 <arg>int(${spent_text}) if ${spent_text} else 0</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.426893" elapsed="0.000162"/>
+<status status="PASS" start="2025-09-25T13:48:10.235469" elapsed="0.000175"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Total spent: $${spent}</arg>
+<arg>$${spent}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.427122" elapsed="0.000109"/>
+<status status="PASS" start="2025-09-25T13:48:10.235710" elapsed="0.000106"/>
 </kw>
 <if>
 <branch type="IF" condition="${spent} &gt; 0">
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.427538" level="INFO">${user} = {'name': 'Trantow', 'spent': 811}</msg>
+<msg time="2025-09-25T13:48:10.236129" level="INFO">${user} = {'name': 'Ratke', 'spent': 642}</msg>
 <var>${user}</var>
 <arg>name=${name}</arg>
 <arg>spent=${spent}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.427401" elapsed="0.000179"/>
+<status status="PASS" start="2025-09-25T13:48:10.235989" elapsed="0.000181"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${users_with_spent}</arg>
 <arg>${user}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.427645" elapsed="0.000087"/>
+<status status="PASS" start="2025-09-25T13:48:10.236235" elapsed="0.000088"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.428100" level="INFO">${total_spent} = 4733</msg>
+<msg time="2025-09-25T13:48:10.236488" level="INFO">${total_spent} = 5816</msg>
 <var>${total_spent}</var>
 <arg>${total_spent} + ${spent}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.427797" elapsed="0.000359"/>
+<status status="PASS" start="2025-09-25T13:48:10.236386" elapsed="0.000142"/>
 </kw>
-<status status="PASS" start="2025-09-25T12:37:01.427295" elapsed="0.000912"/>
+<status status="PASS" start="2025-09-25T13:48:10.235880" elapsed="0.000685"/>
 </branch>
-<status status="PASS" start="2025-09-25T12:37:01.427280" elapsed="0.000972"/>
+<status status="PASS" start="2025-09-25T13:48:10.235866" elapsed="0.000736"/>
 </if>
 <var name="${i}">23</var>
-<status status="PASS" start="2025-09-25T12:37:01.401225" elapsed="0.027043"/>
+<status status="PASS" start="2025-09-25T13:48:10.212820" elapsed="0.023795"/>
 </iter>
 <iter>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.428654" level="INFO">${current_row_locator} = (//table//tbody//tr)[24]</msg>
+<msg time="2025-09-25T13:48:10.236877" level="INFO">${current_row_locator} = (//table//tbody//tr)[24]</msg>
 <var>${current_row_locator}</var>
 <arg>(${table_row})[${i}]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.428517" elapsed="0.000357"/>
+<status status="PASS" start="2025-09-25T13:48:10.236784" elapsed="0.000132"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.429262" level="INFO">${name_locator} = (//table//tbody//tr)[24]/td[2]//a/div</msg>
+<msg time="2025-09-25T13:48:10.237057" level="INFO">${name_locator} = (//table//tbody//tr)[24]/td[2]//a/div</msg>
 <var>${name_locator}</var>
 <arg>${current_row_locator}/td[2]//a/div</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.429133" elapsed="0.000180"/>
+<status status="PASS" start="2025-09-25T13:48:10.236976" elapsed="0.000116"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:01.440505" level="INFO">${raw_name} = D
-Dahlia O'Connell</msg>
+<msg time="2025-09-25T13:48:10.248178" level="INFO">${raw_name} = A
+Amari Casper</msg>
 <var>${raw_name}</var>
 <arg>${name_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.429387" elapsed="0.011219"/>
+<status status="PASS" start="2025-09-25T13:48:10.237156" elapsed="0.011119"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.440910" level="INFO">${name} = Dahlia O'Connell</msg>
+<msg time="2025-09-25T13:48:10.248564" level="INFO">${name} = Amari Casper</msg>
 <var>${name}</var>
 <arg>" ".join("""${raw_name}""".split()[1:])</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.440729" elapsed="0.000226"/>
+<status status="PASS" start="2025-09-25T13:48:10.248394" elapsed="0.000213"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>\n====== User ${i} ======</arg>
+<arg>\n${name}:</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.441027" elapsed="0.000125"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Name: ${name}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.441224" elapsed="0.000091"/>
+<status status="PASS" start="2025-09-25T13:48:10.248682" elapsed="0.000118"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.441477" level="INFO">${spent_locator} = (//table//tbody//tr)[24]/td[5]</msg>
+<msg time="2025-09-25T13:48:10.248969" level="INFO">${spent_locator} = (//table//tbody//tr)[24]/td[5]</msg>
 <var>${spent_locator}</var>
 <arg>${current_row_locator}/td[5]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.441388" elapsed="0.000129"/>
+<status status="PASS" start="2025-09-25T13:48:10.248873" elapsed="0.000137"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:01.451273" level="INFO">${spent_text} = $0.00</msg>
+<msg time="2025-09-25T13:48:10.284590" level="INFO">${spent_text} = $0.00</msg>
 <var>${spent_text}</var>
 <arg>${spent_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.441584" elapsed="0.009792"/>
+<status status="PASS" start="2025-09-25T13:48:10.249075" elapsed="0.035639"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.451697" level="INFO">${spent_text} = 0.00</msg>
+<msg time="2025-09-25T13:48:10.285104" level="INFO">${spent_text} = 0.00</msg>
 <var>${spent_text}</var>
 <arg>"""${spent_text}""".replace("$","").replace(",","").strip()</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.451500" elapsed="0.000238"/>
+<status status="PASS" start="2025-09-25T13:48:10.284857" elapsed="0.000297"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.451945" level="INFO">${spent} = 0</msg>
+<msg time="2025-09-25T13:48:10.285378" level="INFO">${spent} = 0</msg>
 <var>${spent}</var>
 <arg>int(${spent_text}) if ${spent_text} else 0</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.451821" elapsed="0.000161"/>
+<status status="PASS" start="2025-09-25T13:48:10.285233" elapsed="0.000185"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Total spent: $${spent}</arg>
+<arg>$${spent}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.452050" elapsed="0.000101"/>
+<status status="PASS" start="2025-09-25T13:48:10.285490" elapsed="0.000966"/>
 </kw>
 <if>
 <branch type="IF" condition="${spent} &gt; 0">
@@ -2551,278 +2437,254 @@ Dahlia O'Connell</msg>
 <arg>name=${name}</arg>
 <arg>spent=${spent}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:01.452320" elapsed="0.000036"/>
+<status status="NOT RUN" start="2025-09-25T13:48:10.286990" elapsed="0.000052"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${users_with_spent}</arg>
 <arg>${user}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:01.452418" elapsed="0.000031"/>
+<status status="NOT RUN" start="2025-09-25T13:48:10.287119" elapsed="0.000040"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
 <var>${total_spent}</var>
 <arg>${total_spent} + ${spent}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:01.452508" elapsed="0.000032"/>
+<status status="NOT RUN" start="2025-09-25T13:48:10.287225" elapsed="0.000036"/>
 </kw>
-<status status="NOT RUN" start="2025-09-25T12:37:01.452216" elapsed="0.000357"/>
+<status status="NOT RUN" start="2025-09-25T13:48:10.286676" elapsed="0.000621"/>
 </branch>
-<status status="PASS" start="2025-09-25T12:37:01.452203" elapsed="0.000406"/>
+<status status="PASS" start="2025-09-25T13:48:10.286661" elapsed="0.000677"/>
 </if>
 <var name="${i}">24</var>
-<status status="PASS" start="2025-09-25T12:37:01.428405" elapsed="0.024217"/>
+<status status="PASS" start="2025-09-25T13:48:10.236720" elapsed="0.050633"/>
 </iter>
 <iter>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.452892" level="INFO">${current_row_locator} = (//table//tbody//tr)[25]</msg>
+<msg time="2025-09-25T13:48:10.287698" level="INFO">${current_row_locator} = (//table//tbody//tr)[25]</msg>
 <var>${current_row_locator}</var>
 <arg>(${table_row})[${i}]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.452795" elapsed="0.000138"/>
+<status status="PASS" start="2025-09-25T13:48:10.287561" elapsed="0.000203"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.453093" level="INFO">${name_locator} = (//table//tbody//tr)[25]/td[2]//a/div</msg>
+<msg time="2025-09-25T13:48:10.288205" level="INFO">${name_locator} = (//table//tbody//tr)[25]/td[2]//a/div</msg>
 <var>${name_locator}</var>
 <arg>${current_row_locator}/td[2]//a/div</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.452994" elapsed="0.000136"/>
+<status status="PASS" start="2025-09-25T13:48:10.287894" elapsed="0.000499"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:01.489525" level="INFO">${raw_name} = Montana Gislason</msg>
+<msg time="2025-09-25T13:48:10.302416" level="INFO">${raw_name} = K
+Kian Kulas</msg>
 <var>${raw_name}</var>
 <arg>${name_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.453193" elapsed="0.036444"/>
+<status status="PASS" start="2025-09-25T13:48:10.288906" elapsed="0.013604"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.490054" level="INFO">${name} = Gislason</msg>
+<msg time="2025-09-25T13:48:10.302805" level="INFO">${name} = Kian Kulas</msg>
 <var>${name}</var>
 <arg>" ".join("""${raw_name}""".split()[1:])</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.489826" elapsed="0.000292"/>
+<status status="PASS" start="2025-09-25T13:48:10.302629" elapsed="0.000220"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>\n====== User ${i} ======</arg>
+<arg>\n${name}:</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.490206" elapsed="0.000151"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Name: ${name}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.490432" elapsed="0.000092"/>
+<status status="PASS" start="2025-09-25T13:48:10.302921" elapsed="0.000120"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.490685" level="INFO">${spent_locator} = (//table//tbody//tr)[25]/td[5]</msg>
+<msg time="2025-09-25T13:48:10.303206" level="INFO">${spent_locator} = (//table//tbody//tr)[25]/td[5]</msg>
 <var>${spent_locator}</var>
 <arg>${current_row_locator}/td[5]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.490594" elapsed="0.000136"/>
+<status status="PASS" start="2025-09-25T13:48:10.303113" elapsed="0.000132"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-09-25T12:37:01.507552" level="INFO">${spent_text} = $717.91</msg>
+<msg time="2025-09-25T13:48:10.313555" level="INFO">${spent_text} = $0.00</msg>
 <var>${spent_text}</var>
 <arg>${spent_locator}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.491869" elapsed="0.015782"/>
+<status status="PASS" start="2025-09-25T13:48:10.303310" elapsed="0.010338"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.507967" level="INFO">${spent_text} = 717.91</msg>
+<msg time="2025-09-25T13:48:10.313962" level="INFO">${spent_text} = 0.00</msg>
 <var>${spent_text}</var>
 <arg>"""${spent_text}""".replace("$","").replace(",","").strip()</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.507773" elapsed="0.000238"/>
+<status status="PASS" start="2025-09-25T13:48:10.313768" elapsed="0.000235"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.508334" level="INFO">${spent} = 717</msg>
+<msg time="2025-09-25T13:48:10.314199" level="INFO">${spent} = 0</msg>
 <var>${spent}</var>
 <arg>int(${spent_text}) if ${spent_text} else 0</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.508193" elapsed="0.000184"/>
+<status status="PASS" start="2025-09-25T13:48:10.314075" elapsed="0.000161"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Total spent: $${spent}</arg>
+<arg>$${spent}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.508449" elapsed="0.000108"/>
+<status status="PASS" start="2025-09-25T13:48:10.314303" elapsed="0.000103"/>
 </kw>
 <if>
 <branch type="IF" condition="${spent} &gt; 0">
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.508977" level="INFO">${user} = {'name': 'Gislason', 'spent': 717}</msg>
 <var>${user}</var>
 <arg>name=${name}</arg>
 <arg>spent=${spent}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.508807" elapsed="0.000248"/>
+<status status="NOT RUN" start="2025-09-25T13:48:10.314582" elapsed="0.000036"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${users_with_spent}</arg>
 <arg>${user}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.509153" elapsed="0.000114"/>
+<status status="NOT RUN" start="2025-09-25T13:48:10.314680" elapsed="0.000032"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-09-25T12:37:01.509467" level="INFO">${total_spent} = 5450</msg>
 <var>${total_spent}</var>
 <arg>${total_spent} + ${spent}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.509344" elapsed="0.000169"/>
+<status status="NOT RUN" start="2025-09-25T13:48:10.314771" elapsed="0.000030"/>
 </kw>
-<status status="PASS" start="2025-09-25T12:37:01.508650" elapsed="0.000903"/>
+<status status="NOT RUN" start="2025-09-25T13:48:10.314470" elapsed="0.000364"/>
 </branch>
-<status status="PASS" start="2025-09-25T12:37:01.508628" elapsed="0.000966"/>
+<status status="PASS" start="2025-09-25T13:48:10.314457" elapsed="0.000413"/>
 </if>
 <var name="${i}">25</var>
-<status status="PASS" start="2025-09-25T12:37:01.452731" elapsed="0.056876"/>
+<status status="PASS" start="2025-09-25T13:48:10.287486" elapsed="0.027397"/>
 </iter>
 <var>${i}</var>
 <value>1</value>
 <value>${row_count}+1</value>
-<status status="PASS" start="2025-09-25T12:37:00.559542" elapsed="0.950109"/>
+<status status="PASS" start="2025-09-25T13:48:09.384579" elapsed="0.930345"/>
 </for>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>\n--- Users with Spending ---</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.509734" elapsed="0.000098"/>
+<status status="PASS" start="2025-09-25T13:48:10.314999" elapsed="0.000084"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${user['name']}: $${user['spent']}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.510046" elapsed="0.000581"/>
+<status status="PASS" start="2025-09-25T13:48:10.315292" elapsed="0.000575"/>
 </kw>
-<var name="${user}">{'name': 'Brekke', 'spent': 570}</var>
-<status status="PASS" start="2025-09-25T12:37:01.509977" elapsed="0.000696"/>
+<var name="${user}">{'name': "O'Reilly", 'spent': 1086}</var>
+<status status="PASS" start="2025-09-25T13:48:10.315231" elapsed="0.000685"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${user['name']}: $${user['spent']}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.510799" elapsed="0.000451"/>
+<status status="PASS" start="2025-09-25T13:48:10.316037" elapsed="0.000445"/>
 </kw>
-<var name="${user}">{'name': 'Marks', 'spent': 200}</var>
-<status status="PASS" start="2025-09-25T12:37:01.510740" elapsed="0.000552"/>
+<var name="${user}">{'name': 'Doyle', 'spent': 1768}</var>
+<status status="PASS" start="2025-09-25T13:48:10.315980" elapsed="0.000544"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${user['name']}: $${user['spent']}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.511414" elapsed="0.000442"/>
+<status status="PASS" start="2025-09-25T13:48:10.316643" elapsed="0.000430"/>
 </kw>
-<var name="${user}">{'name': 'Mayer', 'spent': 573}</var>
-<status status="PASS" start="2025-09-25T12:37:01.511356" elapsed="0.000542"/>
+<var name="${user}">{'name': 'Wyman', 'spent': 236}</var>
+<status status="PASS" start="2025-09-25T13:48:10.316587" elapsed="0.000529"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${user['name']}: $${user['spent']}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.512019" elapsed="0.000424"/>
+<status status="PASS" start="2025-09-25T13:48:10.317231" elapsed="0.000417"/>
 </kw>
-<var name="${user}">{'name': 'Trantow', 'spent': 212}</var>
-<status status="PASS" start="2025-09-25T12:37:01.511963" elapsed="0.000606"/>
+<var name="${user}">{'name': 'Parker', 'spent': 235}</var>
+<status status="PASS" start="2025-09-25T13:48:10.317177" elapsed="0.000511"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${user['name']}: $${user['spent']}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.512689" elapsed="0.000453"/>
+<status status="PASS" start="2025-09-25T13:48:10.317801" elapsed="0.000422"/>
 </kw>
-<var name="${user}">{'name': 'Kling', 'spent': 102}</var>
-<status status="PASS" start="2025-09-25T12:37:01.512631" elapsed="0.000552"/>
+<var name="${user}">{'name': 'Fisher', 'spent': 262}</var>
+<status status="PASS" start="2025-09-25T13:48:10.317747" elapsed="0.000516"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${user['name']}: $${user['spent']}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.513298" elapsed="0.000430"/>
+<status status="PASS" start="2025-09-25T13:48:10.318374" elapsed="0.000429"/>
 </kw>
-<var name="${user}">{'name': 'Beatty', 'spent': 1124}</var>
-<status status="PASS" start="2025-09-25T12:37:01.513242" elapsed="0.000526"/>
+<var name="${user}">{'name': 'Heller', 'spent': 1322}</var>
+<status status="PASS" start="2025-09-25T13:48:10.318321" elapsed="0.000528"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${user['name']}: $${user['spent']}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.513888" elapsed="0.000434"/>
+<status status="PASS" start="2025-09-25T13:48:10.318986" elapsed="0.000557"/>
 </kw>
-<var name="${user}">{'name': 'Kohler', 'spent': 221}</var>
-<status status="PASS" start="2025-09-25T12:37:01.513829" elapsed="0.000534"/>
+<var name="${user}">{'name': 'Legros', 'spent': 265}</var>
+<status status="PASS" start="2025-09-25T13:48:10.318906" elapsed="0.000694"/>
 </iter>
 <iter>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${user['name']}: $${user['spent']}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.514477" elapsed="0.000417"/>
+<status status="PASS" start="2025-09-25T13:48:10.319742" elapsed="0.000456"/>
 </kw>
-<var name="${user}">{'name': 'Veum', 'spent': 920}</var>
-<status status="PASS" start="2025-09-25T12:37:01.514423" elapsed="0.000512"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${user['name']}: $${user['spent']}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.515049" elapsed="0.000419"/>
-</kw>
-<var name="${user}">{'name': 'Trantow', 'spent': 811}</var>
-<status status="PASS" start="2025-09-25T12:37:01.514993" elapsed="0.000515"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${user['name']}: $${user['spent']}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.515619" elapsed="0.000414"/>
-</kw>
-<var name="${user}">{'name': 'Gislason', 'spent': 717}</var>
-<status status="PASS" start="2025-09-25T12:37:01.515566" elapsed="0.000507"/>
+<var name="${user}">{'name': 'Ratke', 'spent': 642}</var>
+<status status="PASS" start="2025-09-25T13:48:10.319675" elapsed="0.000571"/>
 </iter>
 <var>${user}</var>
 <value>@{users_with_spent}</value>
-<status status="PASS" start="2025-09-25T12:37:01.509885" elapsed="0.006225"/>
+<status status="PASS" start="2025-09-25T13:48:10.315135" elapsed="0.005153"/>
 </for>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>\n=========================</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.516183" elapsed="0.000084"/>
+<status status="PASS" start="2025-09-25T13:48:10.320365" elapsed="0.000094"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Total Customer Spending: $${total_spent}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.516331" elapsed="0.000081"/>
+<status status="PASS" start="2025-09-25T13:48:10.320530" elapsed="0.000091"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>=========================</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.516476" elapsed="0.000071"/>
+<status status="PASS" start="2025-09-25T13:48:10.320686" elapsed="0.000076"/>
 </kw>
 <if>
 <branch type="IF" condition="${total_spent} &lt; ${MIN_TOTAL_SPENDING}">
 <kw name="Log To Console" owner="BuiltIn">
 <arg>FAIL: Total spending ($${total_spent}) is below minimum threshold ($${MIN_TOTAL_SPENDING})</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:01.516698" elapsed="0.000033"/>
+<status status="NOT RUN" start="2025-09-25T13:48:10.321171" elapsed="0.000046"/>
 </kw>
 <kw name="Fail" owner="BuiltIn">
 <arg>Total spending below minimum threshold</arg>
 <doc>Fails the test with the given message and optionally alters its tags.</doc>
-<status status="NOT RUN" start="2025-09-25T12:37:01.516796" elapsed="0.000033"/>
+<status status="NOT RUN" start="2025-09-25T13:48:10.321293" elapsed="0.000040"/>
 </kw>
-<status status="NOT RUN" start="2025-09-25T12:37:01.516598" elapsed="0.000262"/>
+<status status="NOT RUN" start="2025-09-25T13:48:10.321016" elapsed="0.000356"/>
 </branch>
 <branch type="ELSE">
 <kw name="Log To Console" owner="BuiltIn">
 <arg>PASS: Total spending ($${total_spent}) meets minimum threshold ($${MIN_TOTAL_SPENDING})</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-25T12:37:01.516950" elapsed="0.000088"/>
+<status status="PASS" start="2025-09-25T13:48:10.321478" elapsed="0.000312"/>
 </kw>
-<status status="PASS" start="2025-09-25T12:37:01.516892" elapsed="0.000187"/>
+<status status="PASS" start="2025-09-25T13:48:10.321410" elapsed="0.000517"/>
 </branch>
-<status status="PASS" start="2025-09-25T12:37:01.516589" elapsed="0.000524"/>
+<status status="PASS" start="2025-09-25T13:48:10.320999" elapsed="0.001013"/>
 </if>
-<status status="PASS" start="2025-09-25T12:36:59.955008" elapsed="1.562133"/>
+<status status="PASS" start="2025-09-25T13:48:08.810314" elapsed="1.511789"/>
 </kw>
-<status status="PASS" start="2025-09-25T12:36:57.481970" elapsed="4.035270"/>
+<status status="PASS" start="2025-09-25T13:48:08.809628" elapsed="1.512851"/>
 </test>
-<status status="PASS" start="2025-09-25T12:36:57.357544" elapsed="4.159981"/>
+<status status="PASS" start="2025-09-25T13:48:05.942730" elapsed="4.381342"/>
 </suite>
 <statistics>
 <total>
