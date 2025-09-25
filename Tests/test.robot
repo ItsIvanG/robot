@@ -21,7 +21,6 @@ TEST-000001
     [Documentation]    This is a sample test case
     Launch browser
     Login User
-    Try for loops
     Sleep    5s
 
 TEST-000002

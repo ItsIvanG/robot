@@ -1,40 +1,37 @@
 *** Settings ***
 Resource    ../Resources/App.resource
-Resource    ../Resources/CustomerPage.resource
-
-
+*** Keywords ***
 *** Keywords ***
 Launch browser
     [Arguments]    ${url}=${URL}
+    
+    # --- Chrome Options ---
     ${options}=    Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
     Call Method    ${options}    add_argument    --disable-popup-blocking
     Call Method    ${options}    add_argument    --disable-notifications
     Call Method    ${options}    add_argument    --disable-save-password-bubble
     Call Method    ${options}    add_argument    --start-maximized
     Call Method    ${options}    add_argument    --disable-password-manager-reauthentication
-    
-    ${prefs}=    Create Dictionary    credentials_enable_service=False    profile.password_manager_enabled=False    profile.default_content_setting_values.notifications=2
+
+    # --- Chrome Preferences ---
+    ${prefs}=    Create Dictionary
+    ...    credentials_enable_service=False
+    ...    profile.password_manager_enabled=False
+    ...    profile.default_content_setting_values.notifications=2
+    ...    safebrowsing.enabled=False
+    ...    safebrowsing.disable_download_protection=True
     Call Method    ${options}    add_experimental_option    prefs    ${prefs}
+
+    # --- Open Browser ---
     Open Browser    ${url}    chrome    options=${options}
-    Wait Until Keyword SUcceeds    5x    .5s    Wait Until Element Is Visible    ${login_txt_username}
+
+    # --- Wait for Login Page ---
+    Wait Until Keyword Succeeds    5x    0.5s    Wait Until Element Is Visible    ${login_txt_username}
 Login User
     [Arguments]    ${username}=${USERNAME}    ${password}=${PASSWORD}
     Input Text    ${login_txt_username}    ${username}
     Input Text    ${login_txt_password}    ${password}
     Click Button    //*[@id="root"]/div/div/form/div/button
-
-# Try for loops
-#     FOR    ${i}    IN    @{LIST_1}
-#         Log To Console    ${i}
-#     END
-    
-#     FOR    ${i}    IN RANGE    0    2
-#         Log To Console    ${LIST_1[${i}]}
-#     END
-
-#     FOR    ${i}    IN    @{DICT_1.keys()}
-#         Log To Console    ${DICT_1["${i}"]}
-#     END
 
 Go To Customers Page
     Click Element    ${nav_btn_customers}
